@@ -1,0 +1,21 @@
+# Model checkpoints
+checkpoints/
+# Dataset
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

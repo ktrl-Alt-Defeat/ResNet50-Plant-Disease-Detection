@@ -1,0 +1,3626 @@
+{
+    "status": "WARNING",
+    "dataset_paths": {
+        "train": "data/train",
+        "val": "data/val",
+        "test": "data/test"
+    },
+    "split_sizes": {
+        "train": 38528,
+        "val": 7537,
+        "test": 7542,
+        "total": 53607
+    },
+    "class_count": 38,
+    "class_names": [
+        "apple___apple_scab",
+        "apple___black_rot",
+        "apple___cedar_apple_rust",
+        "apple___healthy",
+        "blueberry___healthy",
+        "cherry_including_sour___healthy",
+        "cherry_including_sour___powdery_mildew",
+        "corn_maize___cercospora_leaf_spot_gray_leaf_spot",
+        "corn_maize___common_rust",
+        "corn_maize___healthy",
+        "corn_maize___northern_leaf_blight",
+        "grape___black_rot",
+        "grape___esca_black_measles",
+        "grape___healthy",
+        "grape___leaf_blight_isariopsis_leaf_spot",
+        "orange___haunglongbing_citrus_greening",
+        "peach___bacterial_spot",
+        "peach___healthy",
+        "pepper_bell___bacterial_spot",
+        "pepper_bell___healthy",
+        "potato___early_blight",
+        "potato___healthy",
+        "potato___late_blight",
+        "raspberry___healthy",
+        "soybean___healthy",
+        "squash___powdery_mildew",
+        "strawberry___healthy",
+        "strawberry___leaf_scorch",
+        "tomato___bacterial_spot",
+        "tomato___early_blight",
+        "tomato___healthy",
+        "tomato___late_blight",
+        "tomato___leaf_mold",
+        "tomato___septoria_leaf_spot",
+        "tomato___spider_mites_two_spotted_spider_mite",
+        "tomato___target_spot",
+        "tomato___tomato_mosaic_virus",
+        "tomato___tomato_yellow_leaf_curl_virus"
+    ],
+    "class_mapping": {
+        "apple___apple_scab": 0,
+        "apple___black_rot": 1,
+        "apple___cedar_apple_rust": 2,
+        "apple___healthy": 3,
+        "blueberry___healthy": 4,
+        "cherry_including_sour___healthy": 5,
+        "cherry_including_sour___powdery_mildew": 6,
+        "corn_maize___cercospora_leaf_spot_gray_leaf_spot": 7,
+        "corn_maize___common_rust": 8,
+        "corn_maize___healthy": 9,
+        "corn_maize___northern_leaf_blight": 10,
+        "grape___black_rot": 11,
+        "grape___esca_black_measles": 12,
+        "grape___healthy": 13,
+        "grape___leaf_blight_isariopsis_leaf_spot": 14,
+        "orange___haunglongbing_citrus_greening": 15,
+        "peach___bacterial_spot": 16,
+        "peach___healthy": 17,
+        "pepper_bell___bacterial_spot": 18,
+        "pepper_bell___healthy": 19,
+        "potato___early_blight": 20,
+        "potato___healthy": 21,
+        "potato___late_blight": 22,
+        "raspberry___healthy": 23,
+        "soybean___healthy": 24,
+        "squash___powdery_mildew": 25,
+        "strawberry___healthy": 26,
+        "strawberry___leaf_scorch": 27,
+        "tomato___bacterial_spot": 28,
+        "tomato___early_blight": 29,
+        "tomato___healthy": 30,
+        "tomato___late_blight": 31,
+        "tomato___leaf_mold": 32,
+        "tomato___septoria_leaf_spot": 33,
+        "tomato___spider_mites_two_spotted_spider_mite": 34,
+        "tomato___target_spot": 35,
+        "tomato___tomato_mosaic_virus": 36,
+        "tomato___tomato_yellow_leaf_curl_virus": 37
+    },
+    "class_alignment": {
+        "aligned": true,
+        "train_classes": [
+            "apple___apple_scab",
+            "apple___black_rot",
+            "apple___cedar_apple_rust",
+            "apple___healthy",
+            "blueberry___healthy",
+            "cherry_including_sour___healthy",
+            "cherry_including_sour___powdery_mildew",
+            "corn_maize___cercospora_leaf_spot_gray_leaf_spot",
+            "corn_maize___common_rust",
+            "corn_maize___healthy",
+            "corn_maize___northern_leaf_blight",
+            "grape___black_rot",
+            "grape___esca_black_measles",
+            "grape___healthy",
+            "grape___leaf_blight_isariopsis_leaf_spot",
+            "orange___haunglongbing_citrus_greening",
+            "peach___bacterial_spot",
+            "peach___healthy",
+            "pepper_bell___bacterial_spot",
+            "pepper_bell___healthy",
+            "potato___early_blight",
+            "potato___healthy",
+            "potato___late_blight",
+            "raspberry___healthy",
+            "soybean___healthy",
+            "squash___powdery_mildew",
+            "strawberry___healthy",
+            "strawberry___leaf_scorch",
+            "tomato___bacterial_spot",
+            "tomato___early_blight",
+            "tomato___healthy",
+            "tomato___late_blight",
+            "tomato___leaf_mold",
+            "tomato___septoria_leaf_spot",
+            "tomato___spider_mites_two_spotted_spider_mite",
+            "tomato___target_spot",
+            "tomato___tomato_mosaic_virus",
+            "tomato___tomato_yellow_leaf_curl_virus"
+        ],
+        "val_classes": [
+            "apple___apple_scab",
+            "apple___black_rot",
+            "apple___cedar_apple_rust",
+            "apple___healthy",
+            "blueberry___healthy",
+            "cherry_including_sour___healthy",
+            "cherry_including_sour___powdery_mildew",
+            "corn_maize___cercospora_leaf_spot_gray_leaf_spot",
+            "corn_maize___common_rust",
+            "corn_maize___healthy",
+            "corn_maize___northern_leaf_blight",
+            "grape___black_rot",
+            "grape___esca_black_measles",
+            "grape___healthy",
+            "grape___leaf_blight_isariopsis_leaf_spot",
+            "orange___haunglongbing_citrus_greening",
+            "peach___bacterial_spot",
+            "peach___healthy",
+            "pepper_bell___bacterial_spot",
+            "pepper_bell___healthy",
+            "potato___early_blight",
+            "potato___healthy",
+            "potato___late_blight",
+            "raspberry___healthy",
+            "soybean___healthy",
+            "squash___powdery_mildew",
+            "strawberry___healthy",
+            "strawberry___leaf_scorch",
+            "tomato___bacterial_spot",
+            "tomato___early_blight",
+            "tomato___healthy",
+            "tomato___late_blight",
+            "tomato___leaf_mold",
+            "tomato___septoria_leaf_spot",
+            "tomato___spider_mites_two_spotted_spider_mite",
+            "tomato___target_spot",
+            "tomato___tomato_mosaic_virus",
+            "tomato___tomato_yellow_leaf_curl_virus"
+        ],
+        "test_classes": [
+            "apple___apple_scab",
+            "apple___black_rot",
+            "apple___cedar_apple_rust",
+            "apple___healthy",
+            "blueberry___healthy",
+            "cherry_including_sour___healthy",
+            "cherry_including_sour___powdery_mildew",
+            "corn_maize___cercospora_leaf_spot_gray_leaf_spot",
+            "corn_maize___common_rust",
+            "corn_maize___healthy",
+            "corn_maize___northern_leaf_blight",
+            "grape___black_rot",
+            "grape___esca_black_measles",
+            "grape___healthy",
+            "grape___leaf_blight_isariopsis_leaf_spot",
+            "orange___haunglongbing_citrus_greening",
+            "peach___bacterial_spot",
+            "peach___healthy",
+            "pepper_bell___bacterial_spot",
+            "pepper_bell___healthy",
+            "potato___early_blight",
+            "potato___healthy",
+            "potato___late_blight",
+            "raspberry___healthy",
+            "soybean___healthy",
+            "squash___powdery_mildew",
+            "strawberry___healthy",
+            "strawberry___leaf_scorch",
+            "tomato___bacterial_spot",
+            "tomato___early_blight",
+            "tomato___healthy",
+            "tomato___late_blight",
+            "tomato___leaf_mold",
+            "tomato___septoria_leaf_spot",
+            "tomato___spider_mites_two_spotted_spider_mite",
+            "tomato___target_spot",
+            "tomato___tomato_mosaic_virus",
+            "tomato___tomato_yellow_leaf_curl_virus"
+        ],
+        "total_unique_classes": 38,
+        "train_class_count": 38,
+        "val_class_count": 38,
+        "test_class_count": 38,
+        "missing_in_val": [],
+        "missing_in_test": [],
+        "extra_in_val": [],
+        "extra_in_test": []
+    },
+    "class_distribution_stats": {
+        "train": {
+            "total_classes": 38,
+            "total_images": 38528,
+            "min_class_size": 218,
+            "max_class_size": 3065,
+            "mean_class_size": 1013.89,
+            "median_class_size": 763.0,
+            "imbalance_ratio": 14.06
+        },
+        "val": {
+            "total_classes": 38,
+            "total_images": 7537,
+            "min_class_size": 22,
+            "max_class_size": 657,
+            "mean_class_size": 198.34,
+            "median_class_size": 155.0,
+            "imbalance_ratio": 29.86
+        },
+        "test": {
+            "total_classes": 38,
+            "total_images": 7542,
+            "min_class_size": 23,
+            "max_class_size": 657,
+            "mean_class_size": 198.47,
+            "median_class_size": 156.0,
+            "imbalance_ratio": 28.57
+        }
+    },
+    "corrupted_images": [],
+    "unsupported_files": [],
+    "empty_classes": {
+        "train": [],
+        "val": [],
+        "test": []
+    },
+    "duplicate_detection": {
+        "intra_split_duplicates": [
+            {
+                "hash": "fd8d2fe8a8d2238d2fcc7f93faa4442d63825d0e27acd8546557e5aeedd16503",
+                "count": 2,
+                "splits": [
+                    "train"
+                ],
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "apple___apple_scab",
+                        "path": "data\\train\\apple___apple_scab\\apple_scab_62.jpg",
+                        "hash": "fd8d2fe8a8d2238d2fcc7f93faa4442d63825d0e27acd8546557e5aeedd16503"
+                    },
+                    {
+                        "split": "train",
+                        "class": "apple___cedar_apple_rust",
+                        "path": "data\\train\\apple___cedar_apple_rust\\apple_rust_64.jpg",
+                        "hash": "fd8d2fe8a8d2238d2fcc7f93faa4442d63825d0e27acd8546557e5aeedd16503"
+                    }
+                ]
+            },
+            {
+                "hash": "1212a5376a2412bd53bb969cc1b4476b0a93663cc0fae4791133681e10acab70",
+                "count": 2,
+                "splits": [
+                    "train"
+                ],
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "apple___apple_scab",
+                        "path": "data\\train\\apple___apple_scab\\apple_scab_65.jpg",
+                        "hash": "1212a5376a2412bd53bb969cc1b4476b0a93663cc0fae4791133681e10acab70"
+                    },
+                    {
+                        "split": "train",
+                        "class": "apple___cedar_apple_rust",
+                        "path": "data\\train\\apple___cedar_apple_rust\\apple_rust_78.jpg",
+                        "hash": "1212a5376a2412bd53bb969cc1b4476b0a93663cc0fae4791133681e10acab70"
+                    }
+                ]
+            },
+            {
+                "hash": "4ac3d5b8364c8b618b4ba77ddfdbdce826605d191bb634e15dca742c528147bf",
+                "count": 2,
+                "splits": [
+                    "train"
+                ],
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "apple___apple_scab",
+                        "path": "data\\train\\apple___apple_scab\\apple_scab_76.jpg",
+                        "hash": "4ac3d5b8364c8b618b4ba77ddfdbdce826605d191bb634e15dca742c528147bf"
+                    },
+                    {
+                        "split": "train",
+                        "class": "apple___cedar_apple_rust",
+                        "path": "data\\train\\apple___cedar_apple_rust\\apple_rust_162.jpg",
+                        "hash": "4ac3d5b8364c8b618b4ba77ddfdbdce826605d191bb634e15dca742c528147bf"
+                    }
+                ]
+            }
+        ],
+        "intra_split_duplicate_count": 3,
+        "cross_split_leakage": [],
+        "cross_split_leakage_count": 0,
+        "near_duplicates": [
+            {
+                "dhash": "1310b0a0e2e17862",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "apple___apple_scab",
+                        "path": "data\\train\\apple___apple_scab\\apple_scab_33.jpg",
+                        "dhash": "1310b0a0e2e17862"
+                    },
+                    {
+                        "split": "train",
+                        "class": "apple___cedar_apple_rust",
+                        "path": "data\\train\\apple___cedar_apple_rust\\apple_rust_30.jpg",
+                        "dhash": "1310b0a0e2e17862"
+                    }
+                ]
+            },
+            {
+                "dhash": "8ccaf87030706068",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "apple___black_rot",
+                        "path": "data\\train\\apple___black_rot\\apple_black_rot_144.jpg",
+                        "dhash": "8ccaf87030706068"
+                    },
+                    {
+                        "split": "train",
+                        "class": "apple___black_rot",
+                        "path": "data\\train\\apple___black_rot\\apple_black_rot_6.jpg",
+                        "dhash": "8ccaf87030706068"
+                    }
+                ]
+            },
+            {
+                "dhash": "9e3433024090d0e0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "apple___black_rot",
+                        "path": "data\\train\\apple___black_rot\\apple_black_rot_18.jpg",
+                        "dhash": "9e3433024090d0e0"
+                    },
+                    {
+                        "split": "train",
+                        "class": "apple___cedar_apple_rust",
+                        "path": "data\\train\\apple___cedar_apple_rust\\apple_rust_96.jpg",
+                        "dhash": "9e3433024090d0e0"
+                    }
+                ]
+            },
+            {
+                "dhash": "6c28acab232b2fe3",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "cherry_including_sour___powdery_mildew",
+                        "path": "data\\train\\cherry_including_sour___powdery_mildew\\cherry_powdery_mildew_51.jpg",
+                        "dhash": "6c28acab232b2fe3"
+                    },
+                    {
+                        "split": "train",
+                        "class": "cherry_including_sour___powdery_mildew",
+                        "path": "data\\train\\cherry_including_sour___powdery_mildew\\cherry_powdery_mildew_google_0024.jpg",
+                        "dhash": "6c28acab232b2fe3"
+                    }
+                ]
+            },
+            {
+                "dhash": "e2f2747c78783333",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "corn_maize___cercospora_leaf_spot_gray_leaf_spot",
+                        "path": "data\\train\\corn_maize___cercospora_leaf_spot_gray_leaf_spot\\63885679-bac0-4326-a535-115a8f27c3d2___RS_GLSp 7319.JPG",
+                        "dhash": "e2f2747c78783333"
+                    },
+                    {
+                        "split": "train",
+                        "class": "corn_maize___cercospora_leaf_spot_gray_leaf_spot",
+                        "path": "data\\train\\corn_maize___cercospora_leaf_spot_gray_leaf_spot\\corn_gray_leaf_spot_google_0211.jpg",
+                        "dhash": "e2f2747c78783333"
+                    }
+                ]
+            },
+            {
+                "dhash": "f3f3f1f3f979f0f0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "corn_maize___cercospora_leaf_spot_gray_leaf_spot",
+                        "path": "data\\train\\corn_maize___cercospora_leaf_spot_gray_leaf_spot\\corn_gray_leaf_spot_google_0274.jpg",
+                        "dhash": "f3f3f1f3f979f0f0"
+                    },
+                    {
+                        "split": "val",
+                        "class": "corn_maize___cercospora_leaf_spot_gray_leaf_spot",
+                        "path": "data\\val\\corn_maize___cercospora_leaf_spot_gray_leaf_spot\\86d512cb-65b5-401d-8b98-43cd03dbe815___RS_GLSp 9332.JPG",
+                        "dhash": "f3f3f1f3f979f0f0"
+                    }
+                ]
+            },
+            {
+                "dhash": "0f0f0f0f0f0f0f0f",
+                "count": 3,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "corn_maize___common_rust",
+                        "path": "data\\train\\corn_maize___common_rust\\RS_Rust 2054.JPG",
+                        "dhash": "0f0f0f0f0f0f0f0f"
+                    },
+                    {
+                        "split": "train",
+                        "class": "corn_maize___common_rust",
+                        "path": "data\\train\\corn_maize___common_rust\\RS_Rust 2532.JPG",
+                        "dhash": "0f0f0f0f0f0f0f0f"
+                    },
+                    {
+                        "split": "val",
+                        "class": "corn_maize___common_rust",
+                        "path": "data\\val\\corn_maize___common_rust\\RS_Rust 1903.JPG",
+                        "dhash": "0f0f0f0f0f0f0f0f"
+                    }
+                ]
+            },
+            {
+                "dhash": "c0e0711331336303",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\03027791-26bb-4c46-960e-8df76e27042c___Mt.N.V_HL 6070 - Copy.JPG",
+                        "dhash": "c0e0711331336303"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\03027791-26bb-4c46-960e-8df76e27042c___Mt.N.V_HL 6070.JPG",
+                        "dhash": "c0e0711331336303"
+                    }
+                ]
+            },
+            {
+                "dhash": "d873765636f2f2fe",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\0681edcd-e6f2-4ebe-8ef9-24d3e058e1ec___Mt.N.V_HL 8948 - Copy.JPG",
+                        "dhash": "d873765636f2f2fe"
+                    },
+                    {
+                        "split": "val",
+                        "class": "grape___healthy",
+                        "path": "data\\val\\grape___healthy\\0681edcd-e6f2-4ebe-8ef9-24d3e058e1ec___Mt.N.V_HL 8948.JPG",
+                        "dhash": "d873765636f2f2fe"
+                    }
+                ]
+            },
+            {
+                "dhash": "f7f3f7f777b7f3c0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\0ac4ff49-7fbf-4644-98a4-4dc596e2fa87___Mt.N.V_HL 9004 - Copy.JPG",
+                        "dhash": "f7f3f7f777b7f3c0"
+                    },
+                    {
+                        "split": "val",
+                        "class": "grape___healthy",
+                        "path": "data\\val\\grape___healthy\\0ac4ff49-7fbf-4644-98a4-4dc596e2fa87___Mt.N.V_HL 9004.JPG",
+                        "dhash": "f7f3f7f777b7f3c0"
+                    }
+                ]
+            },
+            {
+                "dhash": "c978d39336337189",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\0dca4cc0-2f37-4d55-8060-ce5e2137fd45___Mt.N.V_HL 9077 - Copy.JPG",
+                        "dhash": "c978d39336337189"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\0dca4cc0-2f37-4d55-8060-ce5e2137fd45___Mt.N.V_HL 9077.JPG",
+                        "dhash": "c978d39336337189"
+                    }
+                ]
+            },
+            {
+                "dhash": "2331331101d0c0c0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\1180dbb8-4509-4f56-a5f6-15ceac163ff9___Mt.N.V_HL 8928 - Copy.JPG",
+                        "dhash": "2331331101d0c0c0"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\1180dbb8-4509-4f56-a5f6-15ceac163ff9___Mt.N.V_HL 8928.JPG",
+                        "dhash": "2331331101d0c0c0"
+                    }
+                ]
+            },
+            {
+                "dhash": "c4f0d09391113121",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\11c32403-6d55-4f16-8c16-fae9c04a9920___Mt.N.V_HL 9008 - Copy.JPG",
+                        "dhash": "c4f0d09391113121"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\11c32403-6d55-4f16-8c16-fae9c04a9920___Mt.N.V_HL 9008.JPG",
+                        "dhash": "c4f0d09391113121"
+                    }
+                ]
+            },
+            {
+                "dhash": "fee073737233f3e1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\15fc132f-e222-4eda-bc5c-32e49def3eaa___Mt.N.V_HL 9090 - Copy.JPG",
+                        "dhash": "fee073737233f3e1"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\15fc132f-e222-4eda-bc5c-32e49def3eaa___Mt.N.V_HL 9090.JPG",
+                        "dhash": "fee073737233f3e1"
+                    }
+                ]
+            },
+            {
+                "dhash": "60f0313730b772e1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\1725a647-0866-45be-bd9f-e5add660c340___Mt.N.V_HL 9083 - Copy.JPG",
+                        "dhash": "60f0313730b772e1"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\1725a647-0866-45be-bd9f-e5add660c340___Mt.N.V_HL 9083.JPG",
+                        "dhash": "60f0313730b772e1"
+                    }
+                ]
+            },
+            {
+                "dhash": "4060709091939313",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\17572261-c800-42b7-8baf-2f73f7657578___Mt.N.V_HL 9009 - Copy.JPG",
+                        "dhash": "4060709091939313"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\17572261-c800-42b7-8baf-2f73f7657578___Mt.N.V_HL 9009.JPG",
+                        "dhash": "4060709091939313"
+                    }
+                ]
+            },
+            {
+                "dhash": "c8e8b0909092b3b9",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\25014ae7-b016-430a-b6a6-aa77dc3c4a8a___Mt.N.V_HL 8986 - Copy.JPG",
+                        "dhash": "c8e8b0909092b3b9"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\25014ae7-b016-430a-b6a6-aa77dc3c4a8a___Mt.N.V_HL 8986.JPG",
+                        "dhash": "c8e8b0909092b3b9"
+                    }
+                ]
+            },
+            {
+                "dhash": "f231b19793133031",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\2c4e117b-0a0f-43d0-93b5-88b2e77d272a___Mt.N.V_HL 6151 - Copy.JPG",
+                        "dhash": "f231b19793133031"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\2c4e117b-0a0f-43d0-93b5-88b2e77d272a___Mt.N.V_HL 6151.JPG",
+                        "dhash": "f231b19793133031"
+                    }
+                ]
+            },
+            {
+                "dhash": "ecf093939291b1b1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\304f5d6d-b17f-4e89-9196-9e649f117d03___Mt.N.V_HL 6189 - Copy.JPG",
+                        "dhash": "ecf093939291b1b1"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\304f5d6d-b17f-4e89-9196-9e649f117d03___Mt.N.V_HL 6189.JPG",
+                        "dhash": "ecf093939291b1b1"
+                    }
+                ]
+            },
+            {
+                "dhash": "3a30b39317b2f06c",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\30ef1555-5cbf-4516-a2ee-aa2f43343810___Mt.N.V_HL 9120 - Copy.JPG",
+                        "dhash": "3a30b39317b2f06c"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\30ef1555-5cbf-4516-a2ee-aa2f43343810___Mt.N.V_HL 9120.JPG",
+                        "dhash": "3a30b39317b2f06c"
+                    }
+                ]
+            },
+            {
+                "dhash": "80f3b1b1b1b17169",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\3212eeb2-e75c-45a3-9211-6147cd370274___Mt.N.V_HL 6041 - Copy.JPG",
+                        "dhash": "80f3b1b1b1b17169"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\3212eeb2-e75c-45a3-9211-6147cd370274___Mt.N.V_HL 6041.JPG",
+                        "dhash": "80f3b1b1b1b17169"
+                    }
+                ]
+            },
+            {
+                "dhash": "cce071919091b1a0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\394d4600-121b-4ecb-9c34-c70f8e3e0377___Mt.N.V_HL 9047 - Copy.JPG",
+                        "dhash": "cce071919091b1a0"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\394d4600-121b-4ecb-9c34-c70f8e3e0377___Mt.N.V_HL 9047.JPG",
+                        "dhash": "cce071919091b1a0"
+                    }
+                ]
+            },
+            {
+                "dhash": "fcf87137d3d1d3e1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\44906155-2446-487e-8531-6c0d98e751dc___Mt.N.V_HL 8992 - Copy.JPG",
+                        "dhash": "fcf87137d3d1d3e1"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\44906155-2446-487e-8531-6c0d98e751dc___Mt.N.V_HL 8992.JPG",
+                        "dhash": "fcf87137d3d1d3e1"
+                    }
+                ]
+            },
+            {
+                "dhash": "687072521190b0b8",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\452823c1-22d2-4bce-a4cc-8ad014421261___Mt.N.V_HL 6199 - Copy.JPG",
+                        "dhash": "687072521190b0b8"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\452823c1-22d2-4bce-a4cc-8ad014421261___Mt.N.V_HL 6199.JPG",
+                        "dhash": "687072521190b0b8"
+                    }
+                ]
+            },
+            {
+                "dhash": "8cc8f1b1b33331a1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\49a5f0af-64f3-4d78-bff0-607bac0ad17a___Mt.N.V_HL 6048 - Copy.JPG",
+                        "dhash": "8cc8f1b1b33331a1"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\49a5f0af-64f3-4d78-bff0-607bac0ad17a___Mt.N.V_HL 6048.JPG",
+                        "dhash": "8cc8f1b1b33331a1"
+                    }
+                ]
+            },
+            {
+                "dhash": "80f072d23636b0e0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\4a2e44c5-aa80-4052-bc4a-5d6324ae5f3e___Mt.N.V_HL 6207 - Copy.JPG",
+                        "dhash": "80f072d23636b0e0"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\4a2e44c5-aa80-4052-bc4a-5d6324ae5f3e___Mt.N.V_HL 6207.JPG",
+                        "dhash": "80f072d23636b0e0"
+                    }
+                ]
+            },
+            {
+                "dhash": "c3f1f3b393d7f1f8",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\4b837c0f-15e7-4896-9a4c-2f5ea9fbb5de___Mt.N.V_HL 6195 - Copy.JPG",
+                        "dhash": "c3f1f3b393d7f1f8"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\4b837c0f-15e7-4896-9a4c-2f5ea9fbb5de___Mt.N.V_HL 6195.JPG",
+                        "dhash": "c3f1f3b393d7f1f8"
+                    }
+                ]
+            },
+            {
+                "dhash": "4af1b3b2b7b1f0e0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\4bd1e0f6-b69e-4936-83a2-235e6f8d7479___Mt.N.V_HL 6044 - Copy.JPG",
+                        "dhash": "4af1b3b2b7b1f0e0"
+                    },
+                    {
+                        "split": "val",
+                        "class": "grape___healthy",
+                        "path": "data\\val\\grape___healthy\\4bd1e0f6-b69e-4936-83a2-235e6f8d7479___Mt.N.V_HL 6044.JPG",
+                        "dhash": "4af1b3b2b7b1f0e0"
+                    }
+                ]
+            },
+            {
+                "dhash": "7c303113337272fa",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\4e38b7a3-fc3e-4e9d-baa0-89f98aa10f99___Mt.N.V_HL 8910 - Copy.JPG",
+                        "dhash": "7c303113337272fa"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\4e38b7a3-fc3e-4e9d-baa0-89f98aa10f99___Mt.N.V_HL 8910.JPG",
+                        "dhash": "7c303113337272fa"
+                    }
+                ]
+            },
+            {
+                "dhash": "ecf0f4b531727272",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\5008dd5a-42f8-4df5-820a-c46d8532895a___Mt.N.V_HL 9015 - Copy.JPG",
+                        "dhash": "ecf0f4b531727272"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\5008dd5a-42f8-4df5-820a-c46d8532895a___Mt.N.V_HL 9015.JPG",
+                        "dhash": "ecf0f4b531727272"
+                    }
+                ]
+            },
+            {
+                "dhash": "8cf87071f677e2f8",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\508d0cc9-05ef-488a-aa84-1f28073954d4___Mt.N.V_HL 6163 - Copy.JPG",
+                        "dhash": "8cf87071f677e2f8"
+                    },
+                    {
+                        "split": "val",
+                        "class": "grape___healthy",
+                        "path": "data\\val\\grape___healthy\\508d0cc9-05ef-488a-aa84-1f28073954d4___Mt.N.V_HL 6163.JPG",
+                        "dhash": "8cf87071f677e2f8"
+                    }
+                ]
+            },
+            {
+                "dhash": "1d90024272b270ec",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\509b9b28-8ecf-4713-a3b0-8b741212ab63___Mt.N.V_HL 8960 - Copy.JPG",
+                        "dhash": "1d90024272b270ec"
+                    },
+                    {
+                        "split": "val",
+                        "class": "grape___healthy",
+                        "path": "data\\val\\grape___healthy\\509b9b28-8ecf-4713-a3b0-8b741212ab63___Mt.N.V_HL 8960.JPG",
+                        "dhash": "1d90024272b270ec"
+                    }
+                ]
+            },
+            {
+                "dhash": "e030305031716363",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\509fba3a-503b-4b72-b969-8b4aae39f7da___Mt.N.V_HL 8915 - Copy.JPG",
+                        "dhash": "e030305031716363"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\509fba3a-503b-4b72-b969-8b4aae39f7da___Mt.N.V_HL 8915.JPG",
+                        "dhash": "e030305031716363"
+                    }
+                ]
+            },
+            {
+                "dhash": "c9f1f1d3d713b1ed",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\515937e8-f329-406e-8d77-c9ddba3e399b___Mt.N.V_HL 9098 - Copy.JPG",
+                        "dhash": "c9f1f1d3d713b1ed"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\515937e8-f329-406e-8d77-c9ddba3e399b___Mt.N.V_HL 9098.JPG",
+                        "dhash": "c9f1f1d3d713b1ed"
+                    }
+                ]
+            },
+            {
+                "dhash": "c1f1b39317717161",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\54ad35bc-3a1a-4cca-bc1b-167888ccbefe___Mt.N.V_HL 6056 - Copy.JPG",
+                        "dhash": "c1f1b39317717161"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\54ad35bc-3a1a-4cca-bc1b-167888ccbefe___Mt.N.V_HL 6056.JPG",
+                        "dhash": "c1f1b39317717161"
+                    }
+                ]
+            },
+            {
+                "dhash": "cce8f3b5767373ef",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\57bd569d-38f1-495d-b290-cdf4dbbbebf8___Mt.N.V_HL 8964 - Copy.JPG",
+                        "dhash": "cce8f3b5767373ef"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\57bd569d-38f1-495d-b290-cdf4dbbbebf8___Mt.N.V_HL 8964.JPG",
+                        "dhash": "cce8f3b5767373ef"
+                    }
+                ]
+            },
+            {
+                "dhash": "ccf8b337177773f9",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\6011c005-bfc9-44ff-b852-0b69a26aa5e6___Mt.N.V_HL 9131 - Copy.JPG",
+                        "dhash": "ccf8b337177773f9"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\6011c005-bfc9-44ff-b852-0b69a26aa5e6___Mt.N.V_HL 9131.JPG",
+                        "dhash": "ccf8b337177773f9"
+                    }
+                ]
+            },
+            {
+                "dhash": "617171d18181b0b8",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\603a6e76-4457-4ac2-a549-1560c7c1cf30___Mt.N.V_HL 9065 - Copy.JPG",
+                        "dhash": "617171d18181b0b8"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\603a6e76-4457-4ac2-a549-1560c7c1cf30___Mt.N.V_HL 9065.JPG",
+                        "dhash": "617171d18181b0b8"
+                    }
+                ]
+            },
+            {
+                "dhash": "b8f0f0f7f6f1f1f9",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\632553f4-7a29-4724-88ff-fbdbfbbc8168___Mt.N.V_HL 6069 - Copy.JPG",
+                        "dhash": "b8f0f0f7f6f1f1f9"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\632553f4-7a29-4724-88ff-fbdbfbbc8168___Mt.N.V_HL 6069.JPG",
+                        "dhash": "b8f0f0f7f6f1f1f9"
+                    }
+                ]
+            },
+            {
+                "dhash": "e071918331f0f0c0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\63a683df-44e9-410f-b04c-c07220e3b9a3___Mt.N.V_HL 9089 - Copy.JPG",
+                        "dhash": "e071918331f0f0c0"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\63a683df-44e9-410f-b04c-c07220e3b9a3___Mt.N.V_HL 9089.JPG",
+                        "dhash": "e071918331f0f0c0"
+                    }
+                ]
+            },
+            {
+                "dhash": "cce0f13317307068",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\66b4364e-f8c7-4358-96e4-1d8012830b40___Mt.N.V_HL 6087 - Copy.JPG",
+                        "dhash": "cce0f13317307068"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\66b4364e-f8c7-4358-96e4-1d8012830b40___Mt.N.V_HL 6087.JPG",
+                        "dhash": "cce0f13317307068"
+                    }
+                ]
+            },
+            {
+                "dhash": "6ce0f13736767773",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\6d08f78b-51f3-4aae-9bb0-a575fc1bd76b___Mt.N.V_HL 9110 - Copy.JPG",
+                        "dhash": "6ce0f13736767773"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\6d08f78b-51f3-4aae-9bb0-a575fc1bd76b___Mt.N.V_HL 9110.JPG",
+                        "dhash": "6ce0f13736767773"
+                    }
+                ]
+            },
+            {
+                "dhash": "38707070b6b4f1e8",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\6f1cda60-ba09-4c3e-a54a-3f08cfd15d1e___Mt.N.V_HL 8975 - Copy.JPG",
+                        "dhash": "38707070b6b4f1e8"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\6f1cda60-ba09-4c3e-a54a-3f08cfd15d1e___Mt.N.V_HL 8975.JPG",
+                        "dhash": "38707070b6b4f1e8"
+                    }
+                ]
+            },
+            {
+                "dhash": "3971b13572b3f1e4",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\71af6c2b-b3ed-4629-8aaa-7b60187caee1___Mt.N.V_HL 9069 - Copy.JPG",
+                        "dhash": "3971b13572b3f1e4"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\71af6c2b-b3ed-4629-8aaa-7b60187caee1___Mt.N.V_HL 9069.JPG",
+                        "dhash": "3971b13572b3f1e4"
+                    }
+                ]
+            },
+            {
+                "dhash": "d9f9321191b1b9b9",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\72cd93bf-63f6-476a-b3ae-43af2006c9f2___Mt.N.V_HL 6132 - Copy.JPG",
+                        "dhash": "d9f9321191b1b9b9"
+                    },
+                    {
+                        "split": "val",
+                        "class": "grape___healthy",
+                        "path": "data\\val\\grape___healthy\\72cd93bf-63f6-476a-b3ae-43af2006c9f2___Mt.N.V_HL 6132.JPG",
+                        "dhash": "d9f9321191b1b9b9"
+                    }
+                ]
+            },
+            {
+                "dhash": "8ffbf393b3f1e8fc",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\75ad9d58-7f7e-4a4c-8ced-fec8d23d9a7e___Mt.N.V_HL 6170 - Copy.JPG",
+                        "dhash": "8ffbf393b3f1e8fc"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\75ad9d58-7f7e-4a4c-8ced-fec8d23d9a7e___Mt.N.V_HL 6170.JPG",
+                        "dhash": "8ffbf393b3f1e8fc"
+                    }
+                ]
+            },
+            {
+                "dhash": "c0f0b03014113131",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\7664a68e-5bf7-4ca4-988d-12d9360bb512___Mt.N.V_HL 9095 - Copy.JPG",
+                        "dhash": "c0f0b03014113131"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\7664a68e-5bf7-4ca4-988d-12d9360bb512___Mt.N.V_HL 9095.JPG",
+                        "dhash": "c0f0b03014113131"
+                    }
+                ]
+            },
+            {
+                "dhash": "407012131230e00c",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\781d2be9-b340-47ee-a21d-05f34b319e5f___Mt.N.V_HL 6021 - Copy.JPG",
+                        "dhash": "407012131230e00c"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\781d2be9-b340-47ee-a21d-05f34b319e5f___Mt.N.V_HL 6021.JPG",
+                        "dhash": "407012131230e00c"
+                    }
+                ]
+            },
+            {
+                "dhash": "3f3cb4f7f35776f2",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\79ffc83e-aaf8-4706-9e30-da5e0f5b69f3___Mt.N.V_HL 6194 - Copy.JPG",
+                        "dhash": "3f3cb4f7f35776f2"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\79ffc83e-aaf8-4706-9e30-da5e0f5b69f3___Mt.N.V_HL 6194.JPG",
+                        "dhash": "3f3cb4f7f35776f2"
+                    }
+                ]
+            },
+            {
+                "dhash": "c8e0711133313133",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\869e0f89-3cd1-4080-8789-7f13de41afac___Mt.N.V_HL 6144 - Copy.JPG",
+                        "dhash": "c8e0711133313133"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\869e0f89-3cd1-4080-8789-7f13de41afac___Mt.N.V_HL 6144.JPG",
+                        "dhash": "c8e0711133313133"
+                    }
+                ]
+            },
+            {
+                "dhash": "c8f0703612323170",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\8f2cf5e7-ee7e-4a6e-84d2-5ac4bdb2e33f___Mt.N.V_HL 6099 - Copy.JPG",
+                        "dhash": "c8f0703612323170"
+                    },
+                    {
+                        "split": "val",
+                        "class": "grape___healthy",
+                        "path": "data\\val\\grape___healthy\\8f2cf5e7-ee7e-4a6e-84d2-5ac4bdb2e33f___Mt.N.V_HL 6099.JPG",
+                        "dhash": "c8f0703612323170"
+                    }
+                ]
+            },
+            {
+                "dhash": "81e1727276767773",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\8f838b46-d591-4247-bf64-982e45e1a699___Mt.N.V_HL 8952.JPG",
+                        "dhash": "81e1727276767773"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\8f838b46-d591-4247-bf64-982e45e1a699___Mt.N.V_HL 8952.JPG",
+                        "dhash": "81e1727276767773"
+                    }
+                ]
+            },
+            {
+                "dhash": "3d71f1b6b2f0e0cc",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\9155a721-9e2c-4b58-99be-eba41f454525___Mt.N.V_HL 6053 - Copy.JPG",
+                        "dhash": "3d71f1b6b2f0e0cc"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\9155a721-9e2c-4b58-99be-eba41f454525___Mt.N.V_HL 6053.JPG",
+                        "dhash": "3d71f1b6b2f0e0cc"
+                    }
+                ]
+            },
+            {
+                "dhash": "6823625272e2e068",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\9733dad1-a4ce-43a5-a166-70dd361df8e3___Mt.N.V_HL 8963 - Copy.JPG",
+                        "dhash": "6823625272e2e068"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\9733dad1-a4ce-43a5-a166-70dd361df8e3___Mt.N.V_HL 8963.JPG",
+                        "dhash": "6823625272e2e068"
+                    }
+                ]
+            },
+            {
+                "dhash": "81f0129514919383",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\9b7e7b6c-30c1-418b-84f8-710420c2c296___Mt.N.V_HL 8934 - Copy.JPG",
+                        "dhash": "81f0129514919383"
+                    },
+                    {
+                        "split": "val",
+                        "class": "grape___healthy",
+                        "path": "data\\val\\grape___healthy\\9b7e7b6c-30c1-418b-84f8-710420c2c296___Mt.N.V_HL 8934.JPG",
+                        "dhash": "81f0129514919383"
+                    }
+                ]
+            },
+            {
+                "dhash": "34705053939311d8",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\9d4aab70-faaf-4bef-9b6b-b214ff80f687___Mt.N.V_HL 6154 - Copy.JPG",
+                        "dhash": "34705053939311d8"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\9d4aab70-faaf-4bef-9b6b-b214ff80f687___Mt.N.V_HL 6154.JPG",
+                        "dhash": "34705053939311d8"
+                    }
+                ]
+            },
+            {
+                "dhash": "60e0315254f2747c",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\9f569d96-a582-4c82-827a-b4467382cc64___Mt.N.V_HL 9067 - Copy.JPG",
+                        "dhash": "60e0315254f2747c"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\9f569d96-a582-4c82-827a-b4467382cc64___Mt.N.V_HL 9067.JPG",
+                        "dhash": "60e0315254f2747c"
+                    }
+                ]
+            },
+            {
+                "dhash": "6033111393d360e0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\a889fb1b-e7cb-4026-a42e-a09558e00ca8___Mt.N.V_HL 9020 - Copy.JPG",
+                        "dhash": "6033111393d360e0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "grape___healthy",
+                        "path": "data\\test\\grape___healthy\\a889fb1b-e7cb-4026-a42e-a09558e00ca8___Mt.N.V_HL 9020.JPG",
+                        "dhash": "6033111393d360e0"
+                    }
+                ]
+            },
+            {
+                "dhash": "48f0f1b1d5f3f0b9",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\abcc3c2c-22e8-4390-979a-41992db56375___Mt.N.V_HL 9070 - Copy.JPG",
+                        "dhash": "48f0f1b1d5f3f0b9"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\abcc3c2c-22e8-4390-979a-41992db56375___Mt.N.V_HL 9070.JPG",
+                        "dhash": "48f0f1b1d5f3f0b9"
+                    }
+                ]
+            },
+            {
+                "dhash": "66f0f1d1969171f9",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\abf00723-a8e1-41e9-9fa6-0c73be7d0854___Mt.N.V_HL 6208 - Copy.JPG",
+                        "dhash": "66f0f1d1969171f9"
+                    },
+                    {
+                        "split": "train",
+                        "class": "grape___healthy",
+                        "path": "data\\train\\grape___healthy\\abf00723-a8e1-41e9-9fa6-0c73be7d0854___Mt.N.V_HL 6208.JPG",
+                        "dhash": "66f0f1d1969171f9"
+                    }
+                ]
+            },
+            {
+                "dhash": "63f3721303838391",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\0be9d721-82f5-42c3-b535-7494afe01dbe___RS_HL 1814.JPG",
+                        "dhash": "63f3721303838391"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\0be9d721-82f5-42c3-b535-7494afe01dbe___RS_HL 1814.JPG",
+                        "dhash": "63f3721303838391"
+                    }
+                ]
+            },
+            {
+                "dhash": "303050425456f6e3",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\111cd9d8-4d27-4225-be9e-d29b21cf56b9___RS_HL 5419.JPG",
+                        "dhash": "303050425456f6e3"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\111cd9d8-4d27-4225-be9e-d29b21cf56b9___RS_HL 5419.JPG",
+                        "dhash": "303050425456f6e3"
+                    }
+                ]
+            },
+            {
+                "dhash": "1736901230f8e8c3",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\1ae826e2-5148-47bd-a44c-711ec9cc9c75___RS_HL 1954.JPG",
+                        "dhash": "1736901230f8e8c3"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\1ae826e2-5148-47bd-a44c-711ec9cc9c75___RS_HL 1954.JPG",
+                        "dhash": "1736901230f8e8c3"
+                    }
+                ]
+            },
+            {
+                "dhash": "1c5cd091b33364c1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\1dcfeaa9-006d-470c-b3e5-d67609d07d4e___RS_HL 1808.JPG",
+                        "dhash": "1c5cd091b33364c1"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\1dcfeaa9-006d-470c-b3e5-d67609d07d4e___RS_HL 1808.JPG",
+                        "dhash": "1c5cd091b33364c1"
+                    }
+                ]
+            },
+            {
+                "dhash": "d0f1b3f3a3839331",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\1f9870b3-899e-46fb-98c9-cfc2ce92895b___RS_HL 1816.JPG",
+                        "dhash": "d0f1b3f3a3839331"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\1f9870b3-899e-46fb-98c9-cfc2ce92895b___RS_HL 1816.JPG",
+                        "dhash": "d0f1b3f3a3839331"
+                    }
+                ]
+            },
+            {
+                "dhash": "206031321c3c67c3",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\30937333-8898-4634-8c00-af57d3020ba6___RS_HL 1922.JPG",
+                        "dhash": "206031321c3c67c3"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\30937333-8898-4634-8c00-af57d3020ba6___RS_HL 1922.JPG",
+                        "dhash": "206031321c3c67c3"
+                    }
+                ]
+            },
+            {
+                "dhash": "78783213173f76e2",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\3edf7c3f-73e0-439c-870d-76cfd7c3bc45___RS_HL 1859.JPG",
+                        "dhash": "78783213173f76e2"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\3edf7c3f-73e0-439c-870d-76cfd7c3bc45___RS_HL 1859.JPG",
+                        "dhash": "78783213173f76e2"
+                    }
+                ]
+            },
+            {
+                "dhash": "a3e336b79783d140",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\43fd6ace-3712-494a-9aba-de5482d22561___RS_HL 1968.JPG",
+                        "dhash": "a3e336b79783d140"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\43fd6ace-3712-494a-9aba-de5482d22561___RS_HL 1968.JPG",
+                        "dhash": "a3e336b79783d140"
+                    }
+                ]
+            },
+            {
+                "dhash": "d0f13397971331e0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\4ae82355-6885-40e7-9807-dabe46ed3441___RS_HL 5410.JPG",
+                        "dhash": "d0f13397971331e0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\4ae82355-6885-40e7-9807-dabe46ed3441___RS_HL 5410.JPG",
+                        "dhash": "d0f13397971331e0"
+                    }
+                ]
+            },
+            {
+                "dhash": "80b193d3c3c13022",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\4bbccfb6-5720-4c80-9b37-0c3ed8999c9f___RS_HL 1791.JPG",
+                        "dhash": "80b193d3c3c13022"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\4bbccfb6-5720-4c80-9b37-0c3ed8999c9f___RS_HL 1791.JPG",
+                        "dhash": "80b193d3c3c13022"
+                    }
+                ]
+            },
+            {
+                "dhash": "03c3e33737376368",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\57c2663b-5d1d-4476-b067-38b2149c3b2d___RS_HL 1796.JPG",
+                        "dhash": "03c3e33737376368"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\57c2663b-5d1d-4476-b067-38b2149c3b2d___RS_HL 1796.JPG",
+                        "dhash": "03c3e33737376368"
+                    }
+                ]
+            },
+            {
+                "dhash": "7d7337577734f7f3",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\57e24d88-fd01-4422-b8b5-d688d2296184___RS_HL 5401.JPG",
+                        "dhash": "7d7337577734f7f3"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\57e24d88-fd01-4422-b8b5-d688d2296184___RS_HL 5401.JPG",
+                        "dhash": "7d7337577734f7f3"
+                    }
+                ]
+            },
+            {
+                "dhash": "e07233939399286c",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\57e262fc-e0ba-44db-a967-5ba6f1826e49___RS_HL 1897.JPG",
+                        "dhash": "e07233939399286c"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\57e262fc-e0ba-44db-a967-5ba6f1826e49___RS_HL 1897.JPG",
+                        "dhash": "e07233939399286c"
+                    }
+                ]
+            },
+            {
+                "dhash": "646071b1f19370e0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\5d505af8-3f73-4781-980c-a4a696a04550___RS_HL 1934.JPG",
+                        "dhash": "646071b1f19370e0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\5d505af8-3f73-4781-980c-a4a696a04550___RS_HL 1934.JPG",
+                        "dhash": "646071b1f19370e0"
+                    }
+                ]
+            },
+            {
+                "dhash": "3fb99199dcbcf5f3",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\60e9a878-13e0-4345-964c-fd807cd20bbb___RS_HL 1876.JPG",
+                        "dhash": "3fb99199dcbcf5f3"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\60e9a878-13e0-4345-964c-fd807cd20bbb___RS_HL 1876.JPG",
+                        "dhash": "3fb99199dcbcf5f3"
+                    }
+                ]
+            },
+            {
+                "dhash": "d0f0f1b1332391b0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\61b05f0a-14bc-4c8f-a256-57c8b8898d8c___RS_HL 1769.JPG",
+                        "dhash": "d0f0f1b1332391b0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\61b05f0a-14bc-4c8f-a256-57c8b8898d8c___RS_HL 1769.JPG",
+                        "dhash": "d0f0f1b1332391b0"
+                    }
+                ]
+            },
+            {
+                "dhash": "06c1f03414173038",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\61b8a692-91d8-40f5-a4a4-4d910875a638___RS_HL 1966.JPG",
+                        "dhash": "06c1f03414173038"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\61b8a692-91d8-40f5-a4a4-4d910875a638___RS_HL 1966.JPG",
+                        "dhash": "06c1f03414173038"
+                    }
+                ]
+            },
+            {
+                "dhash": "7810d007061232f0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\71c06efe-089f-49b3-beed-095bd7640e32___RS_HL 1947.JPG",
+                        "dhash": "7810d007061232f0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\71c06efe-089f-49b3-beed-095bd7640e32___RS_HL 1947.JPG",
+                        "dhash": "7810d007061232f0"
+                    }
+                ]
+            },
+            {
+                "dhash": "e1e072b6161633e1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\77c75478-e1f0-4aaa-9cbc-af1fed928a74___RS_HL 1748.JPG",
+                        "dhash": "e1e072b6161633e1"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\77c75478-e1f0-4aaa-9cbc-af1fed928a74___RS_HL 1748.JPG",
+                        "dhash": "e1e072b6161633e1"
+                    }
+                ]
+            },
+            {
+                "dhash": "e3f273313274f3f0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\7948ada9-eabc-4cb7-a579-b73e938eb716___RS_HL 4185.JPG",
+                        "dhash": "e3f273313274f3f0"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\7948ada9-eabc-4cb7-a579-b73e938eb716___RS_HL 4185.JPG",
+                        "dhash": "e3f273313274f3f0"
+                    }
+                ]
+            },
+            {
+                "dhash": "40f0f3f7973773c3",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\8583c4ff-2d8b-4b6f-89a8-fcc98917ce9b___RS_HL 1961.JPG",
+                        "dhash": "40f0f3f7973773c3"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\8583c4ff-2d8b-4b6f-89a8-fcc98917ce9b___RS_HL 1961.JPG",
+                        "dhash": "40f0f3f7973773c3"
+                    }
+                ]
+            },
+            {
+                "dhash": "32f8f3e3d3b7f5f1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\8665efd2-fa3d-45f8-b1c0-746c99fb7d1e___RS_HL 1924.JPG",
+                        "dhash": "32f8f3e3d3b7f5f1"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\8665efd2-fa3d-45f8-b1c0-746c99fb7d1e___RS_HL 1924.JPG",
+                        "dhash": "32f8f3e3d3b7f5f1"
+                    }
+                ]
+            },
+            {
+                "dhash": "8cf1f1d3e3d1f86c",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\882798ca-67c3-45a3-86cf-4aed69388145___RS_HL 1750.JPG",
+                        "dhash": "8cf1f1d3e3d1f86c"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\882798ca-67c3-45a3-86cf-4aed69388145___RS_HL 1750.JPG",
+                        "dhash": "8cf1f1d3e3d1f86c"
+                    }
+                ]
+            },
+            {
+                "dhash": "d9f0723032347670",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\9a6eb7c4-6b43-477a-89e0-69f62ef67991___RS_HL 1846.JPG",
+                        "dhash": "d9f0723032347670"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\9a6eb7c4-6b43-477a-89e0-69f62ef67991___RS_HL 1846.JPG",
+                        "dhash": "d9f0723032347670"
+                    }
+                ]
+            },
+            {
+                "dhash": "3010c0c00233e3c3",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\9b5be0c5-7d7e-493d-88ba-c721c85f73ca___RS_HL 5405.JPG",
+                        "dhash": "3010c0c00233e3c3"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\9b5be0c5-7d7e-493d-88ba-c721c85f73ca___RS_HL 5405.JPG",
+                        "dhash": "3010c0c00233e3c3"
+                    }
+                ]
+            },
+            {
+                "dhash": "ecf1f1f3e3d9fcec",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\b4031970-60ea-4739-9fed-6c81be1bad1c___RS_HL 1752.JPG",
+                        "dhash": "ecf1f1f3e3d9fcec"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\b4031970-60ea-4739-9fed-6c81be1bad1c___RS_HL 1752.JPG",
+                        "dhash": "ecf1f1f3e3d9fcec"
+                    }
+                ]
+            },
+            {
+                "dhash": "d4f072040717b379",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\b42621c3-f751-46e1-a8d2-83ed85b90554___RS_HL 1740.JPG",
+                        "dhash": "d4f072040717b379"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\b42621c3-f751-46e1-a8d2-83ed85b90554___RS_HL 1740.JPG",
+                        "dhash": "d4f072040717b379"
+                    }
+                ]
+            },
+            {
+                "dhash": "80e0f1b113b1e000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\bb04f738-1848-4dda-8834-384a48b335cd___RS_HL 1765.JPG",
+                        "dhash": "80e0f1b113b1e000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\bb04f738-1848-4dda-8834-384a48b335cd___RS_HL 1765.JPG",
+                        "dhash": "80e0f1b113b1e000"
+                    }
+                ]
+            },
+            {
+                "dhash": "70707153d1d171e0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\c07db642-c675-4066-99b6-56bc8207fb37___RS_HL 4164.JPG",
+                        "dhash": "70707153d1d171e0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\c07db642-c675-4066-99b6-56bc8207fb37___RS_HL 4164.JPG",
+                        "dhash": "70707153d1d171e0"
+                    }
+                ]
+            },
+            {
+                "dhash": "03e37393c3818010",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\c3caa84b-6078-4489-80ac-919d92d25ff7___RS_HL 1772.JPG",
+                        "dhash": "03e37393c3818010"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\c3caa84b-6078-4489-80ac-919d92d25ff7___RS_HL 1772.JPG",
+                        "dhash": "03e37393c3818010"
+                    }
+                ]
+            },
+            {
+                "dhash": "02c3e3b397939130",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\c548fe0e-21c2-4241-b806-1e438a1213bd___RS_HL 1770.JPG",
+                        "dhash": "02c3e3b397939130"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\c548fe0e-21c2-4241-b806-1e438a1213bd___RS_HL 1770.JPG",
+                        "dhash": "02c3e3b397939130"
+                    }
+                ]
+            },
+            {
+                "dhash": "fcfc34301311187c",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\c6204cb3-cd9f-4d7b-92a6-9773fe562cab___RS_HL 1939.JPG",
+                        "dhash": "fcfc34301311187c"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\c6204cb3-cd9f-4d7b-92a6-9773fe562cab___RS_HL 1939.JPG",
+                        "dhash": "fcfc34301311187c"
+                    }
+                ]
+            },
+            {
+                "dhash": "6e7c3016367670ed",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\c9ad5c9a-c9b0-4e07-9e03-9e9edfd58a19___RS_HL 1755.JPG",
+                        "dhash": "6e7c3016367670ed"
+                    },
+                    {
+                        "split": "test",
+                        "class": "potato___healthy",
+                        "path": "data\\test\\potato___healthy\\c9ad5c9a-c9b0-4e07-9e03-9e9edfd58a19___RS_HL 1755.JPG",
+                        "dhash": "6e7c3016367670ed"
+                    }
+                ]
+            },
+            {
+                "dhash": "3cf1337776f4f4e1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\de9a8669-d437-40f0-aa56-fe2d8276a1e0___RS_HL 1910.JPG",
+                        "dhash": "3cf1337776f4f4e1"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\de9a8669-d437-40f0-aa56-fe2d8276a1e0___RS_HL 1910.JPG",
+                        "dhash": "3cf1337776f4f4e1"
+                    }
+                ]
+            },
+            {
+                "dhash": "c0e163363633b1e8",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\f4b5ec24-d318-4309-8294-9126450d5d7f___RS_HL 1824.JPG",
+                        "dhash": "c0e163363633b1e8"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\f4b5ec24-d318-4309-8294-9126450d5d7f___RS_HL 1824.JPG",
+                        "dhash": "c0e163363633b1e8"
+                    }
+                ]
+            },
+            {
+                "dhash": "83f1f0f476d7d3f8",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\f4be3632-42a1-415a-9f7e-1d5ecb9f49d7___RS_HL 1783.JPG",
+                        "dhash": "83f1f0f476d7d3f8"
+                    },
+                    {
+                        "split": "val",
+                        "class": "potato___healthy",
+                        "path": "data\\val\\potato___healthy\\f4be3632-42a1-415a-9f7e-1d5ecb9f49d7___RS_HL 1783.JPG",
+                        "dhash": "83f1f0f476d7d3f8"
+                    }
+                ]
+            },
+            {
+                "dhash": "f1f31616d07effff",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\IMG_20231105_133348.jpg",
+                        "dhash": "f1f31616d07effff"
+                    },
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\IMG_20231105_133351.jpg",
+                        "dhash": "f1f31616d07effff"
+                    }
+                ]
+            },
+            {
+                "dhash": "000030963070f0f0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\IMG_20231105_133447.jpg",
+                        "dhash": "000030963070f0f0"
+                    },
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\IMG_20231105_133451.jpg",
+                        "dhash": "000030963070f0f0"
+                    }
+                ]
+            },
+            {
+                "dhash": "f8f17169e9dcffff",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\IMG_20231105_135353.jpg",
+                        "dhash": "f8f17169e9dcffff"
+                    },
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\IMG_20231105_135357.jpg",
+                        "dhash": "f8f17169e9dcffff"
+                    }
+                ]
+            },
+            {
+                "dhash": "00607030b0707070",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\IMG_20231105_135544.jpg",
+                        "dhash": "00607030b0707070"
+                    },
+                    {
+                        "split": "train",
+                        "class": "potato___healthy",
+                        "path": "data\\train\\potato___healthy\\IMG_20231105_135547.jpg",
+                        "dhash": "00607030b0707070"
+                    }
+                ]
+            },
+            {
+                "dhash": "c0e0701717757573",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "soybean___healthy",
+                        "path": "data\\train\\soybean___healthy\\c71197cf-3559-40e8-a4a0-0a5efd9f6d07___RS_HL 6246.JPG",
+                        "dhash": "c0e0701717757573"
+                    },
+                    {
+                        "split": "train",
+                        "class": "soybean___healthy",
+                        "path": "data\\train\\soybean___healthy\\ead7ac0c-9622-450f-ab66-f41073aff39a___RS_HL 6244.JPG",
+                        "dhash": "c0e0701717757573"
+                    }
+                ]
+            },
+            {
+                "dhash": "e8723616163c3fff",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "strawberry___leaf_scorch",
+                        "path": "data\\train\\strawberry___leaf_scorch\\03e9b07f-582d-4a76-9a9c-aeacc96e4284___RS_L.Scorch 0870.JPG",
+                        "dhash": "e8723616163c3fff"
+                    },
+                    {
+                        "split": "test",
+                        "class": "strawberry___leaf_scorch",
+                        "path": "data\\test\\strawberry___leaf_scorch\\aed8624d-676c-453f-a0af-cfee0fac55f9___RS_L.Scorch 0869.JPG",
+                        "dhash": "e8723616163c3fff"
+                    }
+                ]
+            },
+            {
+                "dhash": "e0c0f8b030f1c969",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\03b6acc7-41a6-4670-b47c-bef6d4baea18___PSU_CG 2363.JPG",
+                        "dhash": "e0c0f8b030f1c969"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\03b6acc7-41a6-4670-b47c-bef6d4baea18___PSU_CG 2363.JPG",
+                        "dhash": "e0c0f8b030f1c969"
+                    }
+                ]
+            },
+            {
+                "dhash": "e0e0b1b1b3f1c141",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\0b5e2269-7b37-43ac-9a96-c62b9bba2383___PSU_CG 2243.JPG",
+                        "dhash": "e0e0b1b1b3f1c141"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\0b5e2269-7b37-43ac-9a96-c62b9bba2383___PSU_CG 2243.JPG",
+                        "dhash": "e0e0b1b1b3f1c141"
+                    }
+                ]
+            },
+            {
+                "dhash": "00406021b0c08100",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\0e56889c-7e80-49f3-8da3-3a437244e8fd___PSU_CG 2140.JPG",
+                        "dhash": "00406021b0c08100"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\0e56889c-7e80-49f3-8da3-3a437244e8fd___PSU_CG 2140.JPG",
+                        "dhash": "00406021b0c08100"
+                    }
+                ]
+            },
+            {
+                "dhash": "4ce0f8737373f3f4",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\0fcf9c2a-5c8c-4f37-aa43-6fd41d5e5442___PSU_CG 2055.JPG",
+                        "dhash": "4ce0f8737373f3f4"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\0fcf9c2a-5c8c-4f37-aa43-6fd41d5e5442___PSU_CG 2055.JPG",
+                        "dhash": "4ce0f8737373f3f4"
+                    }
+                ]
+            },
+            {
+                "dhash": "81c1e2f2b6e28000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\1170f108-86a3-4bc6-8a06-c82e55178f91___PSU_CG 2327.JPG",
+                        "dhash": "81c1e2f2b6e28000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\1170f108-86a3-4bc6-8a06-c82e55178f91___PSU_CG 2327.JPG",
+                        "dhash": "81c1e2f2b6e28000"
+                    }
+                ]
+            },
+            {
+                "dhash": "406060313270e000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\124f2b6c-ba93-46dc-9662-04ec2b631a23___PSU_CG 2084.JPG",
+                        "dhash": "406060313270e000"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\124f2b6c-ba93-46dc-9662-04ec2b631a23___PSU_CG 2084.JPG",
+                        "dhash": "406060313270e000"
+                    }
+                ]
+            },
+            {
+                "dhash": "80c071394111e020",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\1349c403-c930-42be-9bfd-39a099c66f4a___PSU_CG 2328.JPG",
+                        "dhash": "80c071394111e020"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\1349c403-c930-42be-9bfd-39a099c66f4a___PSU_CG 2328.JPG",
+                        "dhash": "80c071394111e020"
+                    }
+                ]
+            },
+            {
+                "dhash": "3878f0f171f0f2ef",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\14112644-0ec3-465b-af00-ac2286d8e15f___PSU_CG 2344.JPG",
+                        "dhash": "3878f0f171f0f2ef"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\14112644-0ec3-465b-af00-ac2286d8e15f___PSU_CG 2344.JPG",
+                        "dhash": "3878f0f171f0f2ef"
+                    }
+                ]
+            },
+            {
+                "dhash": "814170f0f0f08800",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\1588e951-b57d-47a2-8371-7be3a45fd2cc___PSU_CG 2121.JPG",
+                        "dhash": "814170f0f0f08800"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\1588e951-b57d-47a2-8371-7be3a45fd2cc___PSU_CG 2121.JPG",
+                        "dhash": "814170f0f0f08800"
+                    }
+                ]
+            },
+            {
+                "dhash": "f0f3f061b1d0f81c",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\15f1e22a-9c70-4060-a275-fac10c196341___PSU_CG 2118.JPG",
+                        "dhash": "f0f3f061b1d0f81c"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\15f1e22a-9c70-4060-a275-fac10c196341___PSU_CG 2118.JPG",
+                        "dhash": "f0f3f061b1d0f81c"
+                    }
+                ]
+            },
+            {
+                "dhash": "81f1f1b19111e0c0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\176ff795-1f59-4248-8374-bf5a88187934___PSU_CG 2160.JPG",
+                        "dhash": "81f1f1b19111e0c0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\176ff795-1f59-4248-8374-bf5a88187934___PSU_CG 2160.JPG",
+                        "dhash": "81f1f1b19111e0c0"
+                    }
+                ]
+            },
+            {
+                "dhash": "d0e071736363c1e0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\17964172-e35d-45c6-8273-ae73dfab0cb3___PSU_CG 2074.JPG",
+                        "dhash": "d0e071736363c1e0"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\17964172-e35d-45c6-8273-ae73dfab0cb3___PSU_CG 2074.JPG",
+                        "dhash": "d0e071736363c1e0"
+                    }
+                ]
+            },
+            {
+                "dhash": "fdf0f0f3f1f263e1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\1b9dc07a-40ab-45bc-a873-1ad4212e35a3___PSU_CG 2289.JPG",
+                        "dhash": "fdf0f0f3f1f263e1"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\1b9dc07a-40ab-45bc-a873-1ad4212e35a3___PSU_CG 2289.JPG",
+                        "dhash": "fdf0f0f3f1f263e1"
+                    }
+                ]
+            },
+            {
+                "dhash": "c86031b13131f0d0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\1ccfd473-6b3d-47a9-897b-0653d7683d75___PSU_CG 2163.JPG",
+                        "dhash": "c86031b13131f0d0"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\1ccfd473-6b3d-47a9-897b-0653d7683d75___PSU_CG 2163.JPG",
+                        "dhash": "c86031b13131f0d0"
+                    }
+                ]
+            },
+            {
+                "dhash": "5060707171f0b000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\21fe0741-4ff6-4f8f-8969-6b8bdeea58fa___PSU_CG 2278.JPG",
+                        "dhash": "5060707171f0b000"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\21fe0741-4ff6-4f8f-8969-6b8bdeea58fa___PSU_CG 2278.JPG",
+                        "dhash": "5060707171f0b000"
+                    }
+                ]
+            },
+            {
+                "dhash": "80c0612161c18000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\2370fa79-6f15-4ae5-a3cb-2d585a0043c2___PSU_CG 2178.JPG",
+                        "dhash": "80c0612161c18000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\2370fa79-6f15-4ae5-a3cb-2d585a0043c2___PSU_CG 2178.JPG",
+                        "dhash": "80c0612161c18000"
+                    }
+                ]
+            },
+            {
+                "dhash": "c0c07033b2f0c080",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\23987cfe-9866-46ce-b4ec-49ad82ede267___PSU_CG 2224.JPG",
+                        "dhash": "c0c07033b2f0c080"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\23987cfe-9866-46ce-b4ec-49ad82ede267___PSU_CG 2224.JPG",
+                        "dhash": "c0c07033b2f0c080"
+                    }
+                ]
+            },
+            {
+                "dhash": "00606031b17160c0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\2480c7f8-eb75-4606-bf92-24f09ac52a37___PSU_CG 2380.JPG",
+                        "dhash": "00606031b17160c0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\2480c7f8-eb75-4606-bf92-24f09ac52a37___PSU_CG 2380.JPG",
+                        "dhash": "00606031b17160c0"
+                    }
+                ]
+            },
+            {
+                "dhash": "81c1e1e0b0b1e0c0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\263f99b9-9604-42c3-9a7f-687973b8dc79___PSU_CG 2280.JPG",
+                        "dhash": "81c1e1e0b0b1e0c0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\263f99b9-9604-42c3-9a7f-687973b8dc79___PSU_CG 2280.JPG",
+                        "dhash": "81c1e1e0b0b1e0c0"
+                    }
+                ]
+            },
+            {
+                "dhash": "47a3b018d8a9b321",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\2d981dde-7e7f-4486-ae83-cdb9b28c7904___PSU_CG 2258.JPG",
+                        "dhash": "47a3b018d8a9b321"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\2d981dde-7e7f-4486-ae83-cdb9b28c7904___PSU_CG 2258.JPG",
+                        "dhash": "47a3b018d8a9b321"
+                    }
+                ]
+            },
+            {
+                "dhash": "fff7f3f2fa79b9b6",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\382828a4-dbdf-4ddc-a75b-9a6fcc4b600e___PSU_CG 2054.JPG",
+                        "dhash": "fff7f3f2fa79b9b6"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\382828a4-dbdf-4ddc-a75b-9a6fcc4b600e___PSU_CG 2054.JPG",
+                        "dhash": "fff7f3f2fa79b9b6"
+                    }
+                ]
+            },
+            {
+                "dhash": "c4e0e2e2f4f2f2ba",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\3cb6ee9b-8550-4216-bde5-814807add4e5___PSU_CG 2395.JPG",
+                        "dhash": "c4e0e2e2f4f2f2ba"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\3cb6ee9b-8550-4216-bde5-814807add4e5___PSU_CG 2395.JPG",
+                        "dhash": "c4e0e2e2f4f2f2ba"
+                    }
+                ]
+            },
+            {
+                "dhash": "bf3f7cf8f939f1f7",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\3d028390-f367-423b-b0f7-a44e2cac2393___PSU_CG 2205.JPG",
+                        "dhash": "bf3f7cf8f939f1f7"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\3d028390-f367-423b-b0f7-a44e2cac2393___PSU_CG 2205.JPG",
+                        "dhash": "bf3f7cf8f939f1f7"
+                    }
+                ]
+            },
+            {
+                "dhash": "c0e0e13111137160",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\49a98ba1-a1b1-4d4b-85af-29aa6648fc64___PSU_CG 2292.JPG",
+                        "dhash": "c0e0e13111137160"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\49a98ba1-a1b1-4d4b-85af-29aa6648fc64___PSU_CG 2292.JPG",
+                        "dhash": "c0e0e13111137160"
+                    }
+                ]
+            },
+            {
+                "dhash": "ff7ebcb933bdfb77",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\4a76c13f-3e28-4849-81ef-4cdd6cdcccf4___PSU_CG 2171.JPG",
+                        "dhash": "ff7ebcb933bdfb77"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\4a76c13f-3e28-4849-81ef-4cdd6cdcccf4___PSU_CG 2171.JPG",
+                        "dhash": "ff7ebcb933bdfb77"
+                    }
+                ]
+            },
+            {
+                "dhash": "407030b1f1c04040",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\4ab5b752-6622-42f2-8743-fa9c9b03e137___PSU_CG 2120.JPG",
+                        "dhash": "407030b1f1c04040"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\4ab5b752-6622-42f2-8743-fa9c9b03e137___PSU_CG 2120.JPG",
+                        "dhash": "407030b1f1c04040"
+                    }
+                ]
+            },
+            {
+                "dhash": "004283c3f1b37150",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\4c518a8d-6ecc-45c2-b14c-f610a400c950___PSU_CG 2370.JPG",
+                        "dhash": "004283c3f1b37150"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\4c518a8d-6ecc-45c2-b14c-f610a400c950___PSU_CG 2370.JPG",
+                        "dhash": "004283c3f1b37150"
+                    }
+                ]
+            },
+            {
+                "dhash": "3838387870b0b43c",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\4e35d3db-e33d-493d-80f2-6a3fdce77959___PSU_CG 2135.JPG",
+                        "dhash": "3838387870b0b43c"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\4e35d3db-e33d-493d-80f2-6a3fdce77959___PSU_CG 2135.JPG",
+                        "dhash": "3838387870b0b43c"
+                    }
+                ]
+            },
+            {
+                "dhash": "363cb8387878f83a",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\526552ed-aa23-41e6-a79f-05f8fca5162d___PSU_CG 2090.JPG",
+                        "dhash": "363cb8387878f83a"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\526552ed-aa23-41e6-a79f-05f8fca5162d___PSU_CG 2090.JPG",
+                        "dhash": "363cb8387878f83a"
+                    }
+                ]
+            },
+            {
+                "dhash": "ff3e7cf8f979f9ff",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\55e25156-7b0c-43c6-b6f8-37d0b7097a38___PSU_CG 2347.JPG",
+                        "dhash": "ff3e7cf8f979f9ff"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\55e25156-7b0c-43c6-b6f8-37d0b7097a38___PSU_CG 2347.JPG",
+                        "dhash": "ff3e7cf8f979f9ff"
+                    }
+                ]
+            },
+            {
+                "dhash": "0003e362e1e16040",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\570486a0-abe0-4046-add9-14aab37de620___PSU_CG 2313.JPG",
+                        "dhash": "0003e362e1e16040"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\570486a0-abe0-4046-add9-14aab37de620___PSU_CG 2313.JPG",
+                        "dhash": "0003e362e1e16040"
+                    }
+                ]
+            },
+            {
+                "dhash": "b3f3f1777370e9cf",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\59f9754c-2d49-4a74-ba11-4f9a017c8348___PSU_CG 2200.JPG",
+                        "dhash": "b3f3f1777370e9cf"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\59f9754c-2d49-4a74-ba11-4f9a017c8348___PSU_CG 2200.JPG",
+                        "dhash": "b3f3f1777370e9cf"
+                    }
+                ]
+            },
+            {
+                "dhash": "c0e0e0c1c0f030a0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\5a006502-4484-463c-8ed3-48d61e803520___PSU_CG 2388.JPG",
+                        "dhash": "c0e0e0c1c0f030a0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\5a006502-4484-463c-8ed3-48d61e803520___PSU_CG 2388.JPG",
+                        "dhash": "c0e0e0c1c0f030a0"
+                    }
+                ]
+            },
+            {
+                "dhash": "8040607031707000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\66778ba1-eb89-4597-913a-71c68eb0251e___PSU_CG 2274.JPG",
+                        "dhash": "8040607031707000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\66778ba1-eb89-4597-913a-71c68eb0251e___PSU_CG 2274.JPG",
+                        "dhash": "8040607031707000"
+                    }
+                ]
+            },
+            {
+                "dhash": "4060515131714000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\67076009-be77-4b3f-8de7-bc6f13df64f4___PSU_CG 2209.JPG",
+                        "dhash": "4060515131714000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\67076009-be77-4b3f-8de7-bc6f13df64f4___PSU_CG 2209.JPG",
+                        "dhash": "4060515131714000"
+                    }
+                ]
+            },
+            {
+                "dhash": "0003514131100000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\67662638-1bfa-4ff6-8305-2d8544277ef0___PSU_CG 2222.JPG",
+                        "dhash": "0003514131100000"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\67662638-1bfa-4ff6-8305-2d8544277ef0___PSU_CG 2222.JPG",
+                        "dhash": "0003514131100000"
+                    }
+                ]
+            },
+            {
+                "dhash": "7c6868f13333793c",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\67c65196-795d-4df0-bbd8-0c18af1028c1___PSU_CG 2387.JPG",
+                        "dhash": "7c6868f13333793c"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\67c65196-795d-4df0-bbd8-0c18af1028c1___PSU_CG 2387.JPG",
+                        "dhash": "7c6868f13333793c"
+                    }
+                ]
+            },
+            {
+                "dhash": "2474f8e1e0f030a1",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\6881c9a5-04b2-41c3-b29f-1ca04bd73967___PSU_CG 2390.JPG",
+                        "dhash": "2474f8e1e0f030a1"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\6881c9a5-04b2-41c3-b29f-1ca04bd73967___PSU_CG 2390.JPG",
+                        "dhash": "2474f8e1e0f030a1"
+                    }
+                ]
+            },
+            {
+                "dhash": "3f7cf47273f3fbfb",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\69726f1b-4d1c-4647-aef2-090e57246501___PSU_CG 2131.JPG",
+                        "dhash": "3f7cf47273f3fbfb"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\69726f1b-4d1c-4647-aef2-090e57246501___PSU_CG 2131.JPG",
+                        "dhash": "3f7cf47273f3fbfb"
+                    }
+                ]
+            },
+            {
+                "dhash": "cbd0f1737371f9fd",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\6b15d0fc-1089-4f54-955a-0d1ebbf0ab30___PSU_CG 2364.JPG",
+                        "dhash": "cbd0f1737371f9fd"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\6b15d0fc-1089-4f54-955a-0d1ebbf0ab30___PSU_CG 2364.JPG",
+                        "dhash": "cbd0f1737371f9fd"
+                    }
+                ]
+            },
+            {
+                "dhash": "a0e0793171e0c000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\6e67c953-5934-439c-8303-e1762793a36a___PSU_CG 2181.JPG",
+                        "dhash": "a0e0793171e0c000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\6e67c953-5934-439c-8303-e1762793a36a___PSU_CG 2181.JPG",
+                        "dhash": "a0e0793171e0c000"
+                    }
+                ]
+            },
+            {
+                "dhash": "0080e1607071e080",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\6f020ba1-d1a7-41f4-95da-4ca61471b2e6___PSU_CG 2059.JPG",
+                        "dhash": "0080e1607071e080"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\6f020ba1-d1a7-41f4-95da-4ca61471b2e6___PSU_CG 2059.JPG",
+                        "dhash": "0080e1607071e080"
+                    }
+                ]
+            },
+            {
+                "dhash": "3030b0717161c100",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\73be89b4-f57a-4230-a0e4-4a0f50230fc7___PSU_CG 2142.JPG",
+                        "dhash": "3030b0717161c100"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\73be89b4-f57a-4230-a0e4-4a0f50230fc7___PSU_CG 2142.JPG",
+                        "dhash": "3030b0717161c100"
+                    }
+                ]
+            },
+            {
+                "dhash": "7030b0b0b0e08000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\76a40b12-a909-483a-853e-f548c569be2e___PSU_CG 2189.JPG",
+                        "dhash": "7030b0b0b0e08000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\76a40b12-a909-483a-853e-f548c569be2e___PSU_CG 2189.JPG",
+                        "dhash": "7030b0b0b0e08000"
+                    }
+                ]
+            },
+            {
+                "dhash": "81e1f07231316040",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\76d665fa-6aec-4c47-adac-069107b3cf46___PSU_CG 2268.JPG",
+                        "dhash": "81e1f07231316040"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\76d665fa-6aec-4c47-adac-069107b3cf46___PSU_CG 2268.JPG",
+                        "dhash": "81e1f07231316040"
+                    }
+                ]
+            },
+            {
+                "dhash": "0040b091913160c2",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\79bc1836-99f1-48ac-a05c-3113b59b1a3d___PSU_CG 2172.JPG",
+                        "dhash": "0040b091913160c2"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\79bc1836-99f1-48ac-a05c-3113b59b1a3d___PSU_CG 2172.JPG",
+                        "dhash": "0040b091913160c2"
+                    }
+                ]
+            },
+            {
+                "dhash": "bf36b0b13131f1d9",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\7a6e4837-d63d-465a-abae-ef857bf43e2d___PSU_CG 2117.JPG",
+                        "dhash": "bf36b0b13131f1d9"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\7a6e4837-d63d-465a-abae-ef857bf43e2d___PSU_CG 2117.JPG",
+                        "dhash": "bf36b0b13131f1d9"
+                    }
+                ]
+            },
+            {
+                "dhash": "030181c1c0810100",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\7db0dde8-3597-4a71-8fc1-cc6bc1dd89c4___PSU_CG 2196.JPG",
+                        "dhash": "030181c1c0810100"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\7db0dde8-3597-4a71-8fc1-cc6bc1dd89c4___PSU_CG 2196.JPG",
+                        "dhash": "030181c1c0810100"
+                    }
+                ]
+            },
+            {
+                "dhash": "7070b1b092e0c000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\7ddb3878-8899-42bd-8ec1-5ee012f30cf2___PSU_CG 2188.JPG",
+                        "dhash": "7070b1b092e0c000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\7ddb3878-8899-42bd-8ec1-5ee012f30cf2___PSU_CG 2188.JPG",
+                        "dhash": "7070b1b092e0c000"
+                    }
+                ]
+            },
+            {
+                "dhash": "89c1e061c1f06081",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\875b2d3c-44cd-440c-8807-8f52b1e7d45a___PSU_CG 2318.JPG",
+                        "dhash": "89c1e061c1f06081"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\875b2d3c-44cd-440c-8807-8f52b1e7d45a___PSU_CG 2318.JPG",
+                        "dhash": "89c1e061c1f06081"
+                    }
+                ]
+            },
+            {
+                "dhash": "3030707960e18100",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\89bc4fcf-1c6c-4285-84b5-564fd657e150___PSU_CG 2419.JPG",
+                        "dhash": "3030707960e18100"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\89bc4fcf-1c6c-4285-84b5-564fd657e150___PSU_CG 2419.JPG",
+                        "dhash": "3030707960e18100"
+                    }
+                ]
+            },
+            {
+                "dhash": "4060717131e14000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\8a01c89e-3a9f-465a-ac47-79cc99f5ffaa___PSU_CG 2329.JPG",
+                        "dhash": "4060717131e14000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\8a01c89e-3a9f-465a-ac47-79cc99f5ffaa___PSU_CG 2329.JPG",
+                        "dhash": "4060717131e14000"
+                    }
+                ]
+            },
+            {
+                "dhash": "707030b030717100",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\8b75624a-5775-4d44-a2e0-62243632b4a9___PSU_CG 2279.JPG",
+                        "dhash": "707030b030717100"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\8b75624a-5775-4d44-a2e0-62243632b4a9___PSU_CG 2279.JPG",
+                        "dhash": "707030b030717100"
+                    }
+                ]
+            },
+            {
+                "dhash": "0384e2d290312020",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\8d37ec47-c16b-4d56-a19e-0cf49690a30a___PSU_CG 2197.JPG",
+                        "dhash": "0384e2d290312020"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\8d37ec47-c16b-4d56-a19e-0cf49690a30a___PSU_CG 2197.JPG",
+                        "dhash": "0384e2d290312020"
+                    }
+                ]
+            },
+            {
+                "dhash": "80e0b09090107040",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\932959d9-826b-465f-82d7-8b419d2ad040___PSU_CG 2187.JPG",
+                        "dhash": "80e0b09090107040"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\932959d9-826b-465f-82d7-8b419d2ad040___PSU_CG 2187.JPG",
+                        "dhash": "80e0b09090107040"
+                    }
+                ]
+            },
+            {
+                "dhash": "80e0303139307040",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\99a4b1cb-e55a-4954-a7c5-ebb0cc57ed2a___PSU_CG 2096.JPG",
+                        "dhash": "80e0303139307040"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\99a4b1cb-e55a-4954-a7c5-ebb0cc57ed2a___PSU_CG 2096.JPG",
+                        "dhash": "80e0303139307040"
+                    }
+                ]
+            },
+            {
+                "dhash": "f3b7fc72131b567e",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\9a3a36e0-b0eb-4844-84f5-db08e2d9adef___PSU_CG 2300.JPG",
+                        "dhash": "f3b7fc72131b567e"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\9a3a36e0-b0eb-4844-84f5-db08e2d9adef___PSU_CG 2300.JPG",
+                        "dhash": "f3b7fc72131b567e"
+                    }
+                ]
+            },
+            {
+                "dhash": "fcfc793b737379fc",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\9c96bbe3-5599-4e31-996f-ae37d75872f5___PSU_CG 2215.JPG",
+                        "dhash": "fcfc793b737379fc"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\9c96bbe3-5599-4e31-996f-ae37d75872f5___PSU_CG 2215.JPG",
+                        "dhash": "fcfc793b737379fc"
+                    }
+                ]
+            },
+            {
+                "dhash": "3091909001316040",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\a72414b0-f520-4044-abeb-cd09c28b4a9f___PSU_CG 2267.JPG",
+                        "dhash": "3091909001316040"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\a72414b0-f520-4044-abeb-cd09c28b4a9f___PSU_CG 2267.JPG",
+                        "dhash": "3091909001316040"
+                    }
+                ]
+            },
+            {
+                "dhash": "137c7cd8c0d0343e",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\b3937c46-37f8-4216-b0cc-db591b1c3514___PSU_CG 2186.JPG",
+                        "dhash": "137c7cd8c0d0343e"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\b3937c46-37f8-4216-b0cc-db591b1c3514___PSU_CG 2186.JPG",
+                        "dhash": "137c7cd8c0d0343e"
+                    }
+                ]
+            },
+            {
+                "dhash": "c8e8f83033306000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\bba77afa-234e-40c9-9d2e-6770ac1789e4___PSU_CG 2082.JPG",
+                        "dhash": "c8e8f83033306000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\bba77afa-234e-40c9-9d2e-6770ac1789e4___PSU_CG 2082.JPG",
+                        "dhash": "c8e8f83033306000"
+                    }
+                ]
+            },
+            {
+                "dhash": "fff7f6f239bc7eff",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\bd8c0b7d-08b5-422e-9043-4cbfcfa165e6___PSU_CG 2271.JPG",
+                        "dhash": "fff7f6f239bc7eff"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\bd8c0b7d-08b5-422e-9043-4cbfcfa165e6___PSU_CG 2271.JPG",
+                        "dhash": "fff7f6f239bc7eff"
+                    }
+                ]
+            },
+            {
+                "dhash": "f3f3f2723032f8ec",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\be73ce90-283f-4b17-99bb-57640061c84e___PSU_CG 2167.JPG",
+                        "dhash": "f3f3f2723032f8ec"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\be73ce90-283f-4b17-99bb-57640061c84e___PSU_CG 2167.JPG",
+                        "dhash": "f3f3f2723032f8ec"
+                    }
+                ]
+            },
+            {
+                "dhash": "f1d1c0c0c1607e31",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\bf950cb4-985f-4174-b32b-9ae2d6e99a84___PSU_CG 2320.JPG",
+                        "dhash": "f1d1c0c0c1607e31"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\bf950cb4-985f-4174-b32b-9ae2d6e99a84___PSU_CG 2320.JPG",
+                        "dhash": "f1d1c0c0c1607e31"
+                    }
+                ]
+            },
+            {
+                "dhash": "10308801c2c0c189",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\c16ac093-9b9b-4c37-b669-aa68f3cd55cf___PSU_CG 2270.JPG",
+                        "dhash": "10308801c2c0c189"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\c16ac093-9b9b-4c37-b669-aa68f3cd55cf___PSU_CG 2270.JPG",
+                        "dhash": "10308801c2c0c189"
+                    }
+                ]
+            },
+            {
+                "dhash": "8eccc8e1e1e3e0a0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\c1ff629a-8390-43a4-88ed-86e462d688a7___PSU_CG 2083.JPG",
+                        "dhash": "8eccc8e1e1e3e0a0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\c1ff629a-8390-43a4-88ed-86e462d688a7___PSU_CG 2083.JPG",
+                        "dhash": "8eccc8e1e1e3e0a0"
+                    }
+                ]
+            },
+            {
+                "dhash": "80c1e1335232f280",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\c2bad1f4-959c-4c08-bd0e-ee2f91640632___PSU_CG 2325.JPG",
+                        "dhash": "80c1e1335232f280"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\c2bad1f4-959c-4c08-bd0e-ee2f91640632___PSU_CG 2325.JPG",
+                        "dhash": "80c1e1335232f280"
+                    }
+                ]
+            },
+            {
+                "dhash": "09c4229250408000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\c9da2f9b-58f3-4715-8012-ee1fe722921f___PSU_CG 2199.JPG",
+                        "dhash": "09c4229250408000"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\c9da2f9b-58f3-4715-8012-ee1fe722921f___PSU_CG 2199.JPG",
+                        "dhash": "09c4229250408000"
+                    }
+                ]
+            },
+            {
+                "dhash": "fefc793b5372f2f9",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\ccbfedd0-e8d7-4f09-aa7b-98213e408c39___PSU_CG 2216.JPG",
+                        "dhash": "fefc793b5372f2f9"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\ccbfedd0-e8d7-4f09-aa7b-98213e408c39___PSU_CG 2216.JPG",
+                        "dhash": "fefc793b5372f2f9"
+                    }
+                ]
+            },
+            {
+                "dhash": "ccc8d17337e7d3a3",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\cd8dc897-42ed-494e-8079-53d625d925e0___PSU_CG 2311.JPG",
+                        "dhash": "ccc8d17337e7d3a3"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\cd8dc897-42ed-494e-8079-53d625d925e0___PSU_CG 2311.JPG",
+                        "dhash": "ccc8d17337e7d3a3"
+                    }
+                ]
+            },
+            {
+                "dhash": "c8c1f0f0b0726042",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\cfd8a28f-7af7-4102-b848-0b6d1b2c60e4___PSU_CG 2404.JPG",
+                        "dhash": "c8c1f0f0b0726042"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\cfd8a28f-7af7-4102-b848-0b6d1b2c60e4___PSU_CG 2404.JPG",
+                        "dhash": "c8c1f0f0b0726042"
+                    }
+                ]
+            },
+            {
+                "dhash": "7e6efcbc79faf8fd",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\d636946f-b3da-4b36-aeb6-f602ef86a245___PSU_CG 2101.JPG",
+                        "dhash": "7e6efcbc79faf8fd"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\d636946f-b3da-4b36-aeb6-f602ef86a245___PSU_CG 2101.JPG",
+                        "dhash": "7e6efcbc79faf8fd"
+                    }
+                ]
+            },
+            {
+                "dhash": "89c1f0f0e3c1a903",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\db6ecf05-d8bd-431f-86d7-d3f5403eab81___PSU_CG 2408.JPG",
+                        "dhash": "89c1f0f0e3c1a903"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\db6ecf05-d8bd-431f-86d7-d3f5403eab81___PSU_CG 2408.JPG",
+                        "dhash": "89c1f0f0e3c1a903"
+                    }
+                ]
+            },
+            {
+                "dhash": "03e1e1e0c1c18104",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\dd1161b0-ed4e-42f0-a63b-1ff8d9adf3ed___PSU_CG 2405.JPG",
+                        "dhash": "03e1e1e0c1c18104"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\dd1161b0-ed4e-42f0-a63b-1ff8d9adf3ed___PSU_CG 2405.JPG",
+                        "dhash": "03e1e1e0c1c18104"
+                    }
+                ]
+            },
+            {
+                "dhash": "89c0603831b03000",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\e1693a70-df15-4743-829a-67f593d1e381___PSU_CG 2110.JPG",
+                        "dhash": "89c0603831b03000"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\e1693a70-df15-4743-829a-67f593d1e381___PSU_CG 2110.JPG",
+                        "dhash": "89c0603831b03000"
+                    }
+                ]
+            },
+            {
+                "dhash": "006040d090b12001",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\eb04ce63-3a56-4ed4-abad-124215f10cae___PSU_CG 2264.JPG",
+                        "dhash": "006040d090b12001"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\eb04ce63-3a56-4ed4-abad-124215f10cae___PSU_CG 2264.JPG",
+                        "dhash": "006040d090b12001"
+                    }
+                ]
+            },
+            {
+                "dhash": "ddf9f276363a7c7f",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\eec8df45-9f5b-4121-a630-8088c5422efd___PSU_CG 2157.JPG",
+                        "dhash": "ddf9f276363a7c7f"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\eec8df45-9f5b-4121-a630-8088c5422efd___PSU_CG 2157.JPG",
+                        "dhash": "ddf9f276363a7c7f"
+                    }
+                ]
+            },
+            {
+                "dhash": "7f7efcb173f2f9f9",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\f16eeb0f-5219-4a81-9941-351b3d9ba5fc___PSU_CG 2089.JPG",
+                        "dhash": "7f7efcb173f2f9f9"
+                    },
+                    {
+                        "split": "val",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\val\\tomato___tomato_mosaic_virus\\f16eeb0f-5219-4a81-9941-351b3d9ba5fc___PSU_CG 2089.JPG",
+                        "dhash": "7f7efcb173f2f9f9"
+                    }
+                ]
+            },
+            {
+                "dhash": "c8e8e0f01131e1e0",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\f3d26b9f-7999-4b20-8503-0e1d3a878742___PSU_CG 2304.JPG",
+                        "dhash": "c8e8e0f01131e1e0"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\f3d26b9f-7999-4b20-8503-0e1d3a878742___PSU_CG 2304.JPG",
+                        "dhash": "c8e8e0f01131e1e0"
+                    }
+                ]
+            },
+            {
+                "dhash": "f97372753573f9fd",
+                "count": 2,
+                "locations": [
+                    {
+                        "split": "train",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\train\\tomato___tomato_mosaic_virus\\f6c12455-7dce-40b2-9d33-36bff9caa4ea___PSU_CG 2192.JPG",
+                        "dhash": "f97372753573f9fd"
+                    },
+                    {
+                        "split": "test",
+                        "class": "tomato___tomato_mosaic_virus",
+                        "path": "data\\test\\tomato___tomato_mosaic_virus\\f6c12455-7dce-40b2-9d33-36bff9caa4ea___PSU_CG 2192.JPG",
+                        "dhash": "f97372753573f9fd"
+                    }
+                ]
+            }
+        ],
+        "near_duplicate_count": 182
+    },
+    "image_size_statistics": {
+        "min_width": 135,
+        "max_width": 4160,
+        "avg_width": 243.24,
+        "min_height": 105,
+        "max_height": 4160,
+        "avg_height": 240.28,
+        "total_scanned_images": 53607
+    }
+}

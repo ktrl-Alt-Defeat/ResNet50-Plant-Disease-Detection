@@ -1,0 +1,100 @@
+# Crop/Leaf Disease Classification Configuration
+
+# Reproducibility
+seed: 42
+deterministic: true
+
+# Device options: "cuda", "cpu", or "auto"
+device: "auto"
+
+# Data settings
+data:
+  data_dir: "data"
+  train_dir: "data/train"
+  val_dir: "data/val"
+  test_dir: "data/test"
+  num_classes: null          # Dynamic inference if null
+  img_size: 224
+  resize_size: 256
+  batch_size: 32
+  num_workers: 0
+  pin_memory: true
+  drop_last: false
+  augmentation:
+    random_crop_scale: [0.8, 1.0]
+    horizontal_flip_prob: 0.5
+    vertical_flip_prob: 0.2
+    rotation_degrees: 15
+    color_jitter: 0.2
+  normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+# Data Validation & Leakage Prevention
+validation:
+  check_corrupted: true
+  detect_leakage: true
+  supported_extensions: [".jpg", ".jpeg", ".png", ".bmp", ".webp"]
+
+# Model Architecture (Custom ResNet-50)
+model:
+  name: "resnet50"
+  num_classes: null           # Automatically resolved from results/class_to_idx.json
+  pretrained: false          # Un-pretrained baseline per M3 requirements
+  dropout: 0.0               # Standard ResNet-50 baseline (disabled)
+  zero_init_residual: true   # Zero-initialize final BN in bottleneck blocks
+
+# Training Configuration (Baseline)
+training:
+  epochs: 50
+  batch_size: 32
+  seed: 42
+
+optimizer:
+  name: "adamw"
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+
+scheduler:
+  name: "cosine"
+  min_lr: 0.000001
+
+loss:
+  name: "cross_entropy"
+  label_smoothing: 0.0
+
+mixed_precision:
+  enabled: true
+
+gradient:
+  max_norm: 1.0
+
+early_stopping:
+  enabled: true
+  patience: 10
+  monitor: "val_loss"
+  mode: "min"
+
+checkpoint:
+  save_best: true
+  save_last: true
+
+# Metric & Calibration Settings
+metrics:
+  top_k: 3
+  ece_bins: 10
+  auroc_mode: "macro"
+
+# Benchmark Protocol Options
+benchmark:
+  warmup_iterations: 50
+  benchmark_iterations: 200
+  use_fp16: true
+  batch_size: 32
+  img_size: 224
+
+# Experiment Tracking & Output Directories
+paths:
+  checkpoint_dir: "checkpoints"
+  log_dir: "logs"
+  result_dir: "results"

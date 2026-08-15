@@ -1,0 +1,18 @@
+# Core Deep Learning Framework
+# Note: For CUDA GPU support, install PyTorch with CUDA enabled using:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data & Image Processing
+numpy>=1.22.0
+pillow>=9.0.0
+
+# Configuration & Logging
+pyyaml>=6.0
+
+# Metrics & Evaluation (Macro F1, Precision, Recall, AUROC, Confusion Matrix)
+scikit-learn>=1.0.0
+
+# Progress Tracking
+tqdm>=4.64.0

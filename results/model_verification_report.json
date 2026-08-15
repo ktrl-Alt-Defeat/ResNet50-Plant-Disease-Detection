@@ -1,0 +1,104 @@
+{
+    "status": "PASS",
+    "model_name": "resnet50",
+    "num_classes": 124,
+    "block_configuration": {
+        "conv2_x_blocks": 3,
+        "conv3_x_blocks": 4,
+        "conv4_x_blocks": 6,
+        "conv5_x_blocks": 3,
+        "total_bottleneck_blocks": 16,
+        "total_counted_layers": 50
+    },
+    "parameter_statistics": {
+        "total_parameters": 23762108,
+        "trainable_parameters": 23762108,
+        "model_size_mb": 90.65,
+        "classifier_parameters": 254076,
+        "is_valid": true,
+        "min_expected": 23000000,
+        "max_expected": 26000000
+    },
+    "tensor_shapes": {
+        "input_shape": [
+            32,
+            3,
+            224,
+            224
+        ],
+        "stem_conv_shape": [
+            32,
+            64,
+            112,
+            112
+        ],
+        "maxpool_shape": [
+            32,
+            64,
+            56,
+            56
+        ],
+        "conv2_x_shape": [
+            32,
+            256,
+            56,
+            56
+        ],
+        "conv3_x_shape": [
+            32,
+            512,
+            28,
+            28
+        ],
+        "conv4_x_shape": [
+            32,
+            1024,
+            14,
+            14
+        ],
+        "conv5_x_shape": [
+            32,
+            2048,
+            7,
+            7
+        ],
+        "avgpool_shape": [
+            32,
+            2048,
+            1,
+            1
+        ],
+        "feature_shape": [
+            32,
+            2048
+        ],
+        "logits_shape": [
+            32,
+            124
+        ]
+    },
+    "verification_checks": {
+        "dummy_forward_pass": true,
+        "cpu_forward_pass": true,
+        "cuda_available": true,
+        "cuda_forward_pass": true,
+        "real_dataloader_batch_pass": true,
+        "nan_check_passed": true,
+        "inf_check_passed": true
+    },
+    "real_batch_details": {
+        "input_shape": [
+            32,
+            3,
+            224,
+            224
+        ],
+        "output_shape": [
+            32,
+            124
+        ],
+        "dtype": "torch.float32",
+        "has_nan": false,
+        "has_inf": false
+    }
+}

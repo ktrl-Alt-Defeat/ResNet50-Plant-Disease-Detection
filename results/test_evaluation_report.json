@@ -1,0 +1,79 @@
+{
+    "evaluation_timestamp": "2026-08-15T17:03:33.415824",
+    "model": {
+        "name": "resnet50",
+        "num_classes": 38,
+        "total_parameters": 23585894,
+        "trainable_parameters": 23585894,
+        "model_size_mb": 89.97,
+        "input_resolution": "3x224x224"
+    },
+    "checkpoint": {
+        "path": "checkpoints/best_model.pt",
+        "best_val_loss": 0.045762095302251435,
+        "epoch": 16
+    },
+    "dataset": {
+        "total_test_images": 7542,
+        "total_model_classes": 38,
+        "evaluated_classes": 38,
+        "missing_classes": [],
+        "corrupted_images": 0,
+        "duplicate_leakage": 0
+    },
+    "basic_metrics": {
+        "accuracy": 0.9849,
+        "top1_accuracy": 0.9849,
+        "top5_accuracy": 0.9997
+    },
+    "macro_metrics": {
+        "macro_precision": 0.9847144672261411,
+        "macro_recall": 0.9828243554498787,
+        "macro_f1": 0.9834516658446404
+    },
+    "weighted_metrics": {
+        "weighted_precision": 0.9853468608873663,
+        "weighted_recall": 0.984884645982498,
+        "weighted_f1": 0.9848428784441509
+    },
+    "auroc_auprc": {
+        "macro_auroc": 1.0,
+        "weighted_auroc": 1.0,
+        "macro_auprc": 0.9986,
+        "weighted_auprc": 0.9988,
+        "status": "COMPUTED"
+    },
+    "calibration": {
+        "expected_calibration_error_15bins": 0.0048
+    },
+    "inference": {
+        "device": "cuda:0",
+        "precision": "FP16",
+        "batch_size": 32,
+        "input_resolution": "224x224",
+        "warmup_iterations": 20,
+        "benchmark_iterations": 100,
+        "avg_batch_latency_ms": 50.14,
+        "p50_batch_latency_ms": 50.12,
+        "p95_batch_latency_ms": 50.3,
+        "avg_img_latency_ms": 1.5668,
+        "p50_img_latency_ms": 1.5664,
+        "p95_img_latency_ms": 1.5719,
+        "throughput_images_per_sec": 638.26,
+        "peak_vram_mb": 432.9
+    },
+    "data_limitations": [
+        "Dataset contains 38 classes across splits.",
+        "The following 0 classes have zero test samples and are marked support=0: ."
+    ],
+    "sanity_checks": {
+        "nan_logits_count": 0,
+        "inf_logits_count": 0,
+        "probability_sum_approx_1": true,
+        "parameter_immutability_verified": true,
+        "test_data_used_for_training": false,
+        "test_data_used_for_checkpoint_selection": false,
+        "test_data_used_for_early_stopping": false,
+        "evaluation_only": true
+    }
+}

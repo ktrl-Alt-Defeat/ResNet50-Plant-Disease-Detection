@@ -1,0 +1,16 @@
+{
+    "device": "cuda:0",
+    "precision": "FP16",
+    "batch_size": 32,
+    "input_resolution": "224x224",
+    "warmup_iterations": 20,
+    "benchmark_iterations": 100,
+    "avg_batch_latency_ms": 50.14,
+    "p50_batch_latency_ms": 50.12,
+    "p95_batch_latency_ms": 50.3,
+    "avg_img_latency_ms": 1.5668,
+    "p50_img_latency_ms": 1.5664,
+    "p95_img_latency_ms": 1.5719,
+    "throughput_images_per_sec": 638.26,
+    "peak_vram_mb": 432.9
+}

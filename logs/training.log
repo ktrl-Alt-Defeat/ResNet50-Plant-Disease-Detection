@@ -1,0 +1,79 @@
+2026-08-14 11:26:50,924 [INFO] ==================================================
+2026-08-14 11:26:50,927 [INFO] MILESTONE 4 — REAL TRAINING
+2026-08-14 11:26:50,927 [INFO] ==================================================
+2026-08-14 11:26:50,927 [INFO] Device:               CUDA:0 (NVIDIA GeForce RTX 3050 6GB Laptop GPU)
+2026-08-14 11:26:50,927 [INFO] GPU:                  NVIDIA GeForce RTX 3050 6GB Laptop GPU
+2026-08-14 11:26:50,927 [INFO] Model:                ResNet-50 (124 classes)
+2026-08-14 11:26:50,927 [INFO] Parameters:           23,762,108 (Trainable: 23,762,108)
+2026-08-14 11:26:50,927 [INFO] Train Images:         20,995
+2026-08-14 11:26:50,927 [INFO] Validation Images:    4,521
+2026-08-14 11:26:50,928 [INFO] Test Images:          NOT USED (Protected for M5)
+2026-08-14 11:26:50,928 [INFO] Epochs Configured:    50
+2026-08-14 11:26:50,928 [INFO] AMP Mixed Precision:  True
+2026-08-14 11:26:50,928 [INFO] ==================================================
+2026-08-14 11:29:58,054 [INFO] Epoch  1/50 | Train Loss: 2.4617 (Acc: 40.44%) | Val Loss: 1.9748 (Acc: 50.52%) | LR: 0.000300 | Time: 186.4s
+2026-08-14 11:33:02,415 [INFO] Epoch  2/50 | Train Loss: 1.9438 (Acc: 51.41%) | Val Loss: 1.8030 (Acc: 54.50%) | LR: 0.000299 | Time: 183.6s
+2026-08-14 11:36:09,201 [INFO] Epoch  3/50 | Train Loss: 1.6670 (Acc: 58.40%) | Val Loss: 1.5012 (Acc: 62.77%) | LR: 0.000297 | Time: 186.0s
+2026-08-14 11:39:13,138 [INFO] Epoch  4/50 | Train Loss: 1.5090 (Acc: 62.11%) | Val Loss: 1.4371 (Acc: 64.26%) | LR: 0.000295 | Time: 183.2s
+2026-08-14 11:42:16,849 [INFO] Epoch  5/50 | Train Loss: 1.3917 (Acc: 64.57%) | Val Loss: 1.2746 (Acc: 68.66%) | LR: 0.000293 | Time: 183.0s
+2026-08-14 11:45:20,332 [INFO] Epoch  6/50 | Train Loss: 1.2943 (Acc: 66.83%) | Val Loss: 1.2178 (Acc: 70.18%) | LR: 0.000290 | Time: 182.7s
+2026-08-14 11:48:23,864 [INFO] Epoch  7/50 | Train Loss: 1.2225 (Acc: 68.06%) | Val Loss: 1.2964 (Acc: 67.33%) | LR: 0.000286 | Time: 183.1s
+2026-08-14 11:51:28,032 [INFO] Epoch  8/50 | Train Loss: 1.1500 (Acc: 69.93%) | Val Loss: 1.0935 (Acc: 72.77%) | LR: 0.000282 | Time: 183.4s
+2026-08-14 11:54:30,906 [INFO] Epoch  9/50 | Train Loss: 1.0705 (Acc: 71.63%) | Val Loss: 1.1334 (Acc: 72.48%) | LR: 0.000277 | Time: 182.5s
+2026-08-14 11:57:34,930 [INFO] Epoch 10/50 | Train Loss: 1.0159 (Acc: 73.09%) | Val Loss: 1.0683 (Acc: 72.82%) | LR: 0.000271 | Time: 183.3s
+2026-08-14 12:00:38,430 [INFO] Epoch 11/50 | Train Loss: 0.9659 (Acc: 74.09%) | Val Loss: 1.0144 (Acc: 75.36%) | LR: 0.000266 | Time: 182.8s
+2026-08-14 12:03:43,591 [INFO] Epoch 12/50 | Train Loss: 0.9111 (Acc: 75.14%) | Val Loss: 1.0131 (Acc: 75.36%) | LR: 0.000259 | Time: 184.4s
+2026-08-14 12:06:47,370 [INFO] Epoch 13/50 | Train Loss: 0.8717 (Acc: 76.38%) | Val Loss: 0.9537 (Acc: 76.53%) | LR: 0.000253 | Time: 183.0s
+2026-08-14 12:09:51,620 [INFO] Epoch 14/50 | Train Loss: 0.8353 (Acc: 76.97%) | Val Loss: 0.9490 (Acc: 76.40%) | LR: 0.000246 | Time: 183.5s
+2026-08-14 12:12:54,664 [INFO] Epoch 15/50 | Train Loss: 0.7892 (Acc: 77.99%) | Val Loss: 0.9663 (Acc: 76.80%) | LR: 0.000238 | Time: 182.6s
+2026-08-14 12:16:09,901 [INFO] Epoch 16/50 | Train Loss: 0.7574 (Acc: 78.77%) | Val Loss: 0.9049 (Acc: 78.01%) | LR: 0.000231 | Time: 194.5s
+2026-08-14 12:19:13,575 [INFO] Epoch 17/50 | Train Loss: 0.7193 (Acc: 79.77%) | Val Loss: 0.8939 (Acc: 78.28%) | LR: 0.000223 | Time: 182.8s
+2026-08-14 12:22:17,750 [INFO] Epoch 18/50 | Train Loss: 0.6892 (Acc: 80.00%) | Val Loss: 0.9399 (Acc: 77.88%) | LR: 0.000214 | Time: 183.8s
+2026-08-14 12:25:21,620 [INFO] Epoch 19/50 | Train Loss: 0.6545 (Acc: 81.27%) | Val Loss: 0.8836 (Acc: 78.19%) | LR: 0.000206 | Time: 183.1s
+2026-08-14 13:02:05,361 [INFO] Epoch 20/50 | Train Loss: 0.6219 (Acc: 81.90%) | Val Loss: 0.8544 (Acc: 80.05%) | LR: 0.000197 | Time: 2202.9s
+2026-08-14 13:05:10,233 [INFO] Epoch 21/50 | Train Loss: 0.5917 (Acc: 82.92%) | Val Loss: 0.8455 (Acc: 80.07%) | LR: 0.000188 | Time: 184.1s
+2026-08-14 13:08:13,914 [INFO] Epoch 22/50 | Train Loss: 0.5639 (Acc: 83.67%) | Val Loss: 0.8606 (Acc: 80.20%) | LR: 0.000179 | Time: 183.2s
+2026-08-14 13:11:17,204 [INFO] Epoch 23/50 | Train Loss: 0.5294 (Acc: 84.22%) | Val Loss: 0.8720 (Acc: 80.05%) | LR: 0.000169 | Time: 182.9s
+2026-08-14 13:14:20,773 [INFO] Epoch 24/50 | Train Loss: 0.5059 (Acc: 85.20%) | Val Loss: 0.8228 (Acc: 80.93%) | LR: 0.000160 | Time: 182.8s
+2026-08-14 13:17:23,664 [INFO] Epoch 25/50 | Train Loss: 0.4709 (Acc: 85.67%) | Val Loss: 0.8597 (Acc: 80.93%) | LR: 0.000150 | Time: 182.5s
+2026-08-14 13:20:32,515 [INFO] Epoch 26/50 | Train Loss: 0.4473 (Acc: 86.48%) | Val Loss: 0.8945 (Acc: 80.49%) | LR: 0.000141 | Time: 188.4s
+2026-08-14 13:23:35,264 [INFO] Epoch 27/50 | Train Loss: 0.4221 (Acc: 87.31%) | Val Loss: 0.8523 (Acc: 81.15%) | LR: 0.000132 | Time: 182.3s
+2026-08-14 13:26:38,331 [INFO] Epoch 28/50 | Train Loss: 0.3978 (Acc: 88.05%) | Val Loss: 0.8571 (Acc: 81.38%) | LR: 0.000122 | Time: 182.7s
+2026-08-14 13:29:41,217 [INFO] Epoch 29/50 | Train Loss: 0.3724 (Acc: 88.58%) | Val Loss: 0.8324 (Acc: 81.64%) | LR: 0.000113 | Time: 182.5s
+2026-08-14 13:32:44,407 [INFO] Epoch 30/50 | Train Loss: 0.3518 (Acc: 89.37%) | Val Loss: 0.8323 (Acc: 82.04%) | LR: 0.000104 | Time: 182.8s
+2026-08-14 13:35:48,645 [INFO] Epoch 31/50 | Train Loss: 0.3293 (Acc: 89.97%) | Val Loss: 0.8430 (Acc: 82.46%) | LR: 0.000095 | Time: 183.8s
+2026-08-14 13:38:51,850 [INFO] Epoch 32/50 | Train Loss: 0.3066 (Acc: 90.47%) | Val Loss: 0.8519 (Acc: 82.28%) | LR: 0.000087 | Time: 182.8s
+2026-08-14 13:41:55,216 [INFO] Epoch 33/50 | Train Loss: 0.2852 (Acc: 91.16%) | Val Loss: 0.8613 (Acc: 82.22%) | LR: 0.000078 | Time: 182.9s
+2026-08-14 13:45:02,830 [INFO] Epoch 34/50 | Train Loss: 0.2677 (Acc: 91.68%) | Val Loss: 0.8489 (Acc: 83.21%) | LR: 0.000070 | Time: 187.2s
+2026-08-14 13:45:02,830 [INFO] Early stopping triggered at epoch 34. Best Val Loss: 0.8228
+2026-08-15 14:10:23,608 [INFO] ==================================================
+2026-08-15 14:10:23,608 [INFO] MILESTONE 4 — REAL TRAINING
+2026-08-15 14:10:23,608 [INFO] ==================================================
+2026-08-15 14:10:23,608 [INFO] Device:               CUDA:0 (NVIDIA GeForce RTX 3050 6GB Laptop GPU)
+2026-08-15 14:10:23,608 [INFO] GPU:                  NVIDIA GeForce RTX 3050 6GB Laptop GPU
+2026-08-15 14:10:23,608 [INFO] Model:                ResNet-50 (38 classes)
+2026-08-15 14:10:23,608 [INFO] Parameters:           23,585,894 (Trainable: 23,585,894)
+2026-08-15 14:10:23,608 [INFO] Train Images:         38,528
+2026-08-15 14:10:23,608 [INFO] Validation Images:    7,537
+2026-08-15 14:10:23,608 [INFO] Test Images:          NOT USED (Protected for M5)
+2026-08-15 14:10:23,608 [INFO] Epochs Configured:    50
+2026-08-15 14:10:23,608 [INFO] AMP Mixed Precision:  True
+2026-08-15 14:10:23,608 [INFO] ==================================================
+2026-08-15 14:16:31,441 [INFO] Epoch  1/50 | Train Loss: 1.2613 (Acc: 63.55%) | Val Loss: 0.5609 (Acc: 82.17%) | LR: 0.000300 | Time: 366.9s
+2026-08-15 14:22:33,731 [INFO] Epoch  2/50 | Train Loss: 0.6080 (Acc: 81.05%) | Val Loss: 0.7165 (Acc: 78.23%) | LR: 0.000299 | Time: 361.7s
+2026-08-15 14:28:39,067 [INFO] Epoch  3/50 | Train Loss: 0.4237 (Acc: 86.39%) | Val Loss: 0.3232 (Acc: 89.32%) | LR: 0.000297 | Time: 364.4s
+2026-08-15 14:34:47,185 [INFO] Epoch  4/50 | Train Loss: 0.3167 (Acc: 89.88%) | Val Loss: 0.2405 (Acc: 92.00%) | LR: 0.000295 | Time: 367.1s
+2026-08-15 14:41:04,827 [INFO] Epoch  5/50 | Train Loss: 0.2547 (Acc: 91.72%) | Val Loss: 0.1743 (Acc: 94.35%) | LR: 0.000293 | Time: 376.3s
+2026-08-15 14:48:25,733 [INFO] Epoch  6/50 | Train Loss: 0.2148 (Acc: 92.86%) | Val Loss: 0.2137 (Acc: 93.39%) | LR: 0.000290 | Time: 440.3s
+2026-08-15 14:55:08,987 [INFO] Epoch  7/50 | Train Loss: 0.1858 (Acc: 93.83%) | Val Loss: 0.1275 (Acc: 96.13%) | LR: 0.000286 | Time: 401.8s
+2026-08-15 15:02:06,135 [INFO] Epoch  8/50 | Train Loss: 0.1643 (Acc: 94.67%) | Val Loss: 0.0898 (Acc: 96.80%) | LR: 0.000282 | Time: 416.2s
+2026-08-15 15:08:01,532 [INFO] Epoch  9/50 | Train Loss: 0.1410 (Acc: 95.32%) | Val Loss: 0.0844 (Acc: 97.16%) | LR: 0.000277 | Time: 354.5s
+2026-08-15 15:27:34,124 [INFO] Epoch 10/50 | Train Loss: 0.1246 (Acc: 95.81%) | Val Loss: 0.1046 (Acc: 96.82%) | LR: 0.000271 | Time: 1172.0s
+2026-08-15 15:36:51,208 [INFO] Epoch 11/50 | Train Loss: 0.1137 (Acc: 96.33%) | Val Loss: 0.0838 (Acc: 97.25%) | LR: 0.000266 | Time: 555.7s
+2026-08-15 15:45:17,197 [INFO] Epoch 12/50 | Train Loss: 0.1082 (Acc: 96.47%) | Val Loss: 0.0883 (Acc: 97.45%) | LR: 0.000259 | Time: 505.4s
+2026-08-15 15:53:01,794 [INFO] Epoch 13/50 | Train Loss: 0.0965 (Acc: 96.88%) | Val Loss: 0.0675 (Acc: 97.70%) | LR: 0.000253 | Time: 463.4s
+2026-08-15 16:01:00,593 [INFO] Epoch 14/50 | Train Loss: 0.0896 (Acc: 97.07%) | Val Loss: 0.0613 (Acc: 98.04%) | LR: 0.000246 | Time: 477.6s
+2026-08-15 16:09:11,733 [INFO] Epoch 15/50 | Train Loss: 0.0823 (Acc: 97.14%) | Val Loss: 0.0634 (Acc: 98.08%) | LR: 0.000238 | Time: 490.4s
+2026-08-15 16:28:52,192 [INFO] Epoch 16/50 | Train Loss: 0.0773 (Acc: 97.37%) | Val Loss: 0.0458 (Acc: 98.55%) | LR: 0.000231 | Time: 1179.0s
+2026-08-15 16:36:47,940 [INFO] Epoch 17/50 | Train Loss: 0.0703 (Acc: 97.65%) | Val Loss: 0.0636 (Acc: 97.89%) | LR: 0.000223 | Time: 475.2s
+2026-08-15 16:43:24,688 [INFO] Epoch 18/50 | Train Loss: 0.0632 (Acc: 97.92%) | Val Loss: 0.0527 (Acc: 98.54%) | LR: 0.000214 | Time: 396.0s
