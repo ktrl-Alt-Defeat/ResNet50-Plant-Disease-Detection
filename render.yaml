@@ -1,0 +1,16 @@
+# render.yaml Infrastructure-as-Code Blueprint for Render Deployment
+# ResNet-50 Crop Disease Classification API
+
+services:
+  - type: web
+    name: resnet50-crop-detection
+    env: docker
+    plan: free # Change to starter if extra RAM/CPU is desired
+    region: oregon # Render regions: oregon, singapore, frankfurt, ohio
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: HF_MODEL_URL
+        value: "https://huggingface.co/kanish33/resnet50/resolve/main/best_model.pt"

@@ -26,6 +26,32 @@ class ModelEngine:
         self.transform = get_inference_transforms()
         self.is_loaded: bool = False
 
+    def _download_checkpoint_from_hf(self) -> None:
+        """Download model checkpoint from Hugging Face Hub if missing locally."""
+        import os
+        import shutil
+        import urllib.request
+
+        hf_url = os.getenv(
+            "HF_MODEL_URL",
+            "https://huggingface.co/kanish33/resnet50/resolve/main/best_model.pt"
+        )
+        self.checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
+        print(f"[ModelEngine] Checkpoint not found locally. Downloading from Hugging Face: {hf_url} ...")
+
+        req = urllib.request.Request(
+            hf_url,
+            headers={"User-Agent": "Mozilla/5.0"}
+        )
+        try:
+            with urllib.request.urlopen(req) as response, open(self.checkpoint_path, "wb") as out_file:
+                shutil.copyfileobj(response, out_file)
+            print(f"[ModelEngine] Checkpoint successfully downloaded to: {self.checkpoint_path}")
+        except Exception as e:
+            if self.checkpoint_path.exists():
+                self.checkpoint_path.unlink()
+            raise RuntimeError(f"Failed to download checkpoint from Hugging Face ({hf_url}): {e}")
+
     def load_model(self) -> None:
         """
         Load weights, set eval mode, and build class mappings.
@@ -42,9 +68,9 @@ class ModelEngine:
         else:
             self.class_to_idx = {}
 
-        # 2. Check Checkpoint Existence
+        # 2. Check Checkpoint Existence (download from Hugging Face if missing)
         if not self.checkpoint_path.exists():
-            raise FileNotFoundError(f"Model checkpoint not found at: {self.checkpoint_path}")
+            self._download_checkpoint_from_hf()
 
         print(f"[ModelEngine] Loading checkpoint: {self.checkpoint_path} on device: {self.device}")
         checkpoint = torch.load(self.checkpoint_path, map_location="cpu", weights_only=False)
