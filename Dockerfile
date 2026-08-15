@@ -1,5 +1,5 @@
-# Use slim Python 3.10 image for optimal size and security
-FROM python:3.10-slim
+# Use Python 3.10 slim (Bookworm for better PyTorch compatibility)
+FROM python:3.10-slim-bookworm
 
 # Prevent Python from buffering stdout/stderr and set environment variables
 ENV PYTHONUNBUFFERED=1 \
@@ -10,34 +10,47 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /app
 
-# Install essential system packages (curl for healthchecks, libgomp1 for PyTorch CPU runtime)
+# Install essential system packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
-# Install PyTorch CPU-only packages to keep image lightweight (~700MB)
-RUN pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# Upgrade pip and build tools
+RUN python -m pip install --upgrade pip setuptools wheel
 
-# Install deployment dependencies
+# Install PyTorch CPU-only packages
+RUN pip install --no-cache-dir \
+    torch \
+    torchvision \
+    --extra-index-url https://download.pytorch.org/whl/cpu
+
+# Copy requirements and install remaining Python dependencies
 COPY deployment/requirements.txt /app/deployment/requirements.txt
 RUN pip install --no-cache-dir -r /app/deployment/requirements.txt
 
-# Copy source code, configurations, results, and deployment module
+# Copy project files
 COPY src/ /app/src/
 COPY configs/ /app/configs/
 COPY results/ /app/results/
 COPY deployment/ /app/deployment/
 
-# Pre-download best_model.pt from Hugging Face during image build so deployment boots instantly
-RUN python -c "import urllib.request, os, shutil; os.makedirs('checkpoints', exist_ok=True); req = urllib.request.Request('https://huggingface.co/kanish33/resnet50/resolve/main/best_model.pt', headers={'User-Agent': 'Mozilla/5.0'}); res = urllib.request.urlopen(req); f = open('checkpoints/best_model.pt', 'wb'); shutil.copyfileobj(res, f); f.close(); print('[Docker Build] Downloaded best_model.pt from Hugging Face')"
+# Create checkpoints directory and download the model
+RUN mkdir -p /app/checkpoints && \
+    python -c "import urllib.request, shutil; \
+req = urllib.request.Request( \
+'https://huggingface.co/kanish33/resnet50/resolve/main/best_model.pt', \
+headers={'User-Agent':'Mozilla/5.0'}); \
+with urllib.request.urlopen(req) as r, open('/app/checkpoints/best_model.pt','wb') as f: \
+    shutil.copyfileobj(r, f); \
+print('Model downloaded successfully.')"
 
-# Expose HTTP port
+# Expose application port
 EXPOSE 8080
 
-# Configure container health check
+# Health check
 HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
   CMD curl -f http://localhost:8080/health || exit 1
 
-# Launch FastAPI web app using Uvicorn with dynamic $PORT binding for Render
-CMD ["sh", "-c", "uvicorn deployment.app:app --host 0.0.0.0 --port ${PORT:-10000}"]
+# Start FastAPI application
+CMD ["sh", "-c", "uvicorn deployment.app:app --host 0.0.0.0 --port ${PORT:-8080}"]
