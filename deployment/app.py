@@ -36,14 +36,14 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# CORS Configuration for local frontend integration
-ALLOWED_ORIGINS = [
-    "http://localhost",
-    "http://localhost:3000",
-    "http://localhost:8000",
-    "http://127.0.0.1:3000",
-    "http://127.0.0.1:8000",
-]
+import os
+
+# CORS Configuration for local & cloud frontend integration (e.g. Railway, Vercel)
+cors_env = os.getenv("CORS_ORIGINS", "*")
+if cors_env == "*":
+    ALLOWED_ORIGINS = ["*"]
+else:
+    ALLOWED_ORIGINS = [origin.strip() for origin in cors_env.split(",") if origin.strip()]
 
 app.add_middleware(
     CORSMiddleware,
